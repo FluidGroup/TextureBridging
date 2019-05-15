@@ -6,15 +6,15 @@ open class NodeView<D: ASDisplayNode>: UILabel /* To use `textRect` method */ {
   
   // MARK: - Properties
   
-  public let embedNode: D
+  public let node: D
   private let wrapperNode: WrapperNode
   
   // MARK: - Initializers
   
-  public init(embedNode: D, frame: CGRect = .zero) {
+  public init(node: D, frame: CGRect = .zero) {
     
-    self.embedNode = embedNode
-    self.wrapperNode = WrapperNode(embedNode: embedNode)
+    self.node = node
+    self.wrapperNode = WrapperNode(node: node)
     
     super.init(frame: frame)
     
@@ -25,10 +25,12 @@ open class NodeView<D: ASDisplayNode>: UILabel /* To use `textRect` method */ {
     addSubnode(wrapperNode)
     
     wrapperNode.calculatedLayoutDidChangeHandler = { [weak self] in
+      Log.debug("calculatedLayoutDidChangeHandler")
       self?.invalidateIntrinsicContentSize()
     }
     
     wrapperNode.layoutDidFinishHandler = { [weak self] in
+      Log.debug("layoutDidFinishHandler")
       self?.invalidateIntrinsicContentSize()
     }
   }
@@ -70,18 +72,18 @@ private class WrapperNode : ASDisplayNode {
   var calculatedLayoutDidChangeHandler: () -> Void = {}
   var layoutDidFinishHandler: () -> Void = {}
   
-  let embedNode: ASDisplayNode
+  let node: ASDisplayNode
   
-  init(embedNode: ASDisplayNode) {
+  init(node: ASDisplayNode) {
     
-    self.embedNode = embedNode
+    self.node = node
     
     super.init()
-    addSubnode(embedNode)
+    addSubnode(node)
   }
   
   override func layoutSpecThatFits(_ constrainedSize: ASSizeRange) -> ASLayoutSpec {
-    return ASWrapperLayoutSpec(layoutElement: embedNode)
+    return ASWrapperLayoutSpec(layoutElement: node)
   }
   
   override func calculatedLayoutDidChange() {

@@ -1,0 +1,6 @@
+framework module TypedTextAttributes {
+  umbrella header "TypedTextAttributes-umbrella.h"
+
+  export *
+  module * { export * }
+}

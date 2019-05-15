@@ -1,16 +1,24 @@
 PODS:
+  - EasyPeasy (1.9.0)
   - Texture/Core (2.8.1)
+  - TypedTextAttributes (1.0.2)
 
 DEPENDENCIES:
+  - EasyPeasy
   - Texture/Core
+  - TypedTextAttributes
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - EasyPeasy
     - Texture
+    - TypedTextAttributes
 
 SPEC CHECKSUMS:
+  EasyPeasy: 19a84ef8f8bbcf925b9fecc29d1d78b7dab96718
   Texture: 8ecf6984065a1e54f06bf97b349ecca28582acd7
+  TypedTextAttributes: 280e427de3ea96dec1d1869129e5e251b8f52f37
 
-PODFILE CHECKSUM: 143f9abbe0a10c088d1bf7b660f095bc5904c141
+PODFILE CHECKSUM: 3342b72bac67a538b64d69c2e47d6079f838effe
 
 COCOAPODS: 1.6.1
