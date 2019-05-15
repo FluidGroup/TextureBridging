@@ -1,0 +1,16 @@
+PODS:
+  - Texture/Core (2.8.1)
+
+DEPENDENCIES:
+  - Texture/Core
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Texture
+
+SPEC CHECKSUMS:
+  Texture: 8ecf6984065a1e54f06bf97b349ecca28582acd7
+
+PODFILE CHECKSUM: 143f9abbe0a10c088d1bf7b660f095bc5904c141
+
+COCOAPODS: 1.6.1
