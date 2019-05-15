@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 
     s.name         = "TextureBridging"
     s.version      = "1.0.0"
-    s.summary      = "Allows to bring ASDisplayNode into the world of AutoLayout."
+    s.summary      = "Allows bringing ASDisplayNode into the world of AutoLayout."
   
     s.description  = <<-DESC
     This library is a micro framework. Actuary, has just one source file.
