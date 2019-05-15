@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
     s.author             = { "Muukii" => "muukii.app@gmail.com" }
     s.social_media_url   = "http://twitter.com/muukii_app"
     s.ios.deployment_target = "10.0"
-    s.source       = { :git => "https://github.com/muukii/TextureBriding.git", :tag => "#{s.version}" }
+    s.source       = { :git => "https://github.com/muukii/TextureBridging.git", :tag => "#{s.version}" }
     s.source_files  = "TextureBridging/**/*.swift"
   
     s.frameworks  = "UIKit", "AsyncDisplayKit"
