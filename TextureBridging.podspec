@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
     s.name         = "TextureBridging"
-    s.version      = "1.0.0"
+    s.version      = "1.0.1"
     s.summary      = "Allows bringing ASDisplayNode into the world of AutoLayout."
   
     s.description  = <<-DESC
