@@ -144,10 +144,6 @@ open class NodeView<D: ASDisplayNode>: UILabel /* To use `textRect` method */ {
       self?.invalidateIntrinsicContentSize()
     }
     
-    wrapperNode.layoutDidFinishHandler = { [weak self] in
-      Log.debug("layoutDidFinishHandler")
-      self?.invalidateIntrinsicContentSize()
-    }
   }
   
   @available(*, unavailable)
@@ -169,7 +165,8 @@ open class NodeView<D: ASDisplayNode>: UILabel /* To use `textRect` method */ {
     
     range.max.width = validate(bounds.width, 10000)
     
-    let r = wrapperNode.layoutThatFits(range)
+    let r = wrapperNode.calculateLayoutThatFits(range)
+    Log.debug(bounds, r)
     return CGRect(origin: .zero, size: r.size)
   }
   
@@ -210,10 +207,6 @@ private class WrapperNode : ASDisplayNode {
   override func layoutDidFinish() {
     super.layoutDidFinish()
     layoutDidFinishHandler()
-  }
-  
-  override func layout() {
-    super.layout()
   }
 }
 
