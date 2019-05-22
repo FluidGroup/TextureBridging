@@ -149,6 +149,10 @@ open class NodeView<D: ASDisplayNode>: UILabel /* To use `textRect` method */ {
   public required init?(coder aDecoder: NSCoder) {
     fatalError("init(coder:) has not been implemented")
   }
+    
+  deinit {
+    node.remove(delegateProxy)
+  }
   
   open override func textRect(forBounds bounds: CGRect, limitedToNumberOfLines numberOfLines: Int) -> CGRect {
     
