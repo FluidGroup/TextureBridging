@@ -122,14 +122,13 @@ open class NodeView<D: ASDisplayNode>: UILabel /* To use `textRect` method */ {
   // MARK: - Properties
   
   public let node: D
-  private let wrapperNode: WrapperNode
+  private let delegateProxy = __InterfaceStateDelegateProxy()
   
   // MARK: - Initializers
   
   public init(node: D, frame: CGRect = .zero) {
     
     self.node = node
-    self.wrapperNode = WrapperNode(node: node)
     
     super.init(frame: frame)
     
@@ -137,10 +136,10 @@ open class NodeView<D: ASDisplayNode>: UILabel /* To use `textRect` method */ {
     super.numberOfLines = 0
     isUserInteractionEnabled = true
     
-    addSubnode(wrapperNode)
+    addSubnode(node)
+    node.add(delegateProxy)
     
-    wrapperNode.calculatedLayoutDidChangeHandler = { [weak self] in
-      Log.debug("calculatedLayoutDidChangeHandler")
+    delegateProxy.didLayoutBlock = { [weak self] in
       self?.invalidateIntrinsicContentSize()
     }
     
@@ -165,7 +164,7 @@ open class NodeView<D: ASDisplayNode>: UILabel /* To use `textRect` method */ {
     
     range.max.width = validate(bounds.width, 10000)
     
-    let r = wrapperNode.calculateLayoutThatFits(range)
+    let r = node.calculateLayoutThatFits(range)
     Log.debug(bounds, r)
     return CGRect(origin: .zero, size: r.size)
   }
@@ -176,37 +175,54 @@ open class NodeView<D: ASDisplayNode>: UILabel /* To use `textRect` method */ {
     
     super.layoutSubviews()
     
-    wrapperNode.frame = bounds
+    node.frame = bounds
   }
 }
 
-private class WrapperNode : ASDisplayNode {
+private final class __InterfaceStateDelegateProxy: NSObject, ASInterfaceStateDelegate {
   
-  var calculatedLayoutDidChangeHandler: () -> Void = {}
-  var layoutDidFinishHandler: () -> Void = {}
+  var didLayoutBlock: (() -> Void)?
   
-  let node: ASDisplayNode
-  
-  init(node: ASDisplayNode) {
+  @objc dynamic func interfaceStateDidChange(_ newState: ASInterfaceState, from oldState: ASInterfaceState) {
     
-    self.node = node
+  }
+  
+  @objc dynamic func didEnterVisibleState() {
     
-    super.init()
-    addSubnode(node)
   }
   
-  override func layoutSpecThatFits(_ constrainedSize: ASSizeRange) -> ASLayoutSpec {
-    return ASWrapperLayoutSpec(layoutElement: node)
+  @objc dynamic func didExitVisibleState() {
+    
   }
   
-  override func calculatedLayoutDidChange() {
-    super.calculatedLayoutDidChange()
-    calculatedLayoutDidChangeHandler()
+  func didEnterDisplayState() {
+    
   }
   
-  override func layoutDidFinish() {
-    super.layoutDidFinish()
-    layoutDidFinishHandler()
+  @objc dynamic func didExitDisplayState() {
+    
   }
+  
+  @objc dynamic func didEnterPreloadState() {
+    
+  }
+  
+  @objc dynamic func didExitPreloadState() {
+    
+  }
+  
+  @objc dynamic func nodeDidLayout() {
+    didLayoutBlock?()
+  }
+  
+  @objc dynamic func nodeDidLoad() {
+    
+  }
+  
+  @objc dynamic func hierarchyDisplayDidFinish() {
+    
+  }
+  
 }
+
 
