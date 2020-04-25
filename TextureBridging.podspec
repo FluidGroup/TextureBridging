@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
     s.name         = "TextureBridging"
-    s.version      = "1.2.1"
+    s.version      = "1.2.2"
     s.summary      = "Allows bringing ASDisplayNode into the world of AutoLayout."
   
     s.description  = <<-DESC
@@ -9,12 +9,12 @@ Pod::Spec.new do |s|
     NodeView allows to bring ASDisplayNode into the world of AutoLayout.
                      DESC
   
-    s.homepage     = "https://github.com/muukii/TextureBridging"
+    s.homepage     = "https://github.com/TextureCommunity/TextureBridging"
     s.license      = "MIT"
     s.author             = { "Muukii" => "muukii.app@gmail.com" }
     s.social_media_url   = "http://twitter.com/muukii_app"
     s.ios.deployment_target = "10.0"
-    s.source       = { :git => "https://github.com/muukii/TextureBridging.git", :tag => "#{s.version}" }
+    s.source       = { :git => "https://github.com/TextureCommunity/TextureBridging.git", :tag => "#{s.version}" }
     s.source_files  = "TextureBridging/**/*.swift"
   
     s.frameworks  = "UIKit", "AsyncDisplayKit"
