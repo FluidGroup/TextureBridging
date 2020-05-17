@@ -26,136 +26,138 @@ import AsyncDisplayKit
 
 ///
 open class NodeView<D: ASDisplayNode>: UILabel /* To use `textRect` method */ {
-  
+
   // MARK: - Unavailable
-  
+
   @available(*, unavailable)
   override open var text: String? {
     didSet {}
   }
-  
+
   @available(*, unavailable)
   override open var font: UIFont! {
     didSet {}
   }
-  
+
   @available(*, unavailable)
   override open var textColor: UIColor! {
     didSet {}
   }
-  
+
   @available(*, unavailable)
   override open var shadowColor: UIColor? {
     didSet {}
   }
-  
+
   @available(*, unavailable)
   override open var shadowOffset: CGSize {
     didSet {}
   }
-  
+
   @available(*, unavailable)
   override open var textAlignment: NSTextAlignment {
     didSet {}
   }
-  
+
   @available(*, unavailable)
   override open var lineBreakMode: NSLineBreakMode {
     didSet {}
   }
-  
+
   @available(*, unavailable)
   open override var attributedText: NSAttributedString? {
     didSet {}
   }
-  
+
   @available(*, unavailable)
   open override var highlightedTextColor: UIColor? {
     didSet {}
   }
-  
+
   @available(*, unavailable)
   open override var isHighlighted: Bool {
     didSet {}
   }
-  
+
   @available(*, unavailable)
   open override var isEnabled: Bool {
     didSet {}
   }
-  
+
   @available(*, unavailable)
   open override var numberOfLines: Int {
     didSet {}
   }
-  
+
   @available(*, unavailable)
   open override var adjustsFontSizeToFitWidth: Bool {
     didSet {}
   }
-  
+
   @available(*, unavailable)
   open override var baselineAdjustment: UIBaselineAdjustment {
     didSet {}
   }
-  
+
   @available(*, unavailable)
   open override var minimumScaleFactor: CGFloat {
     didSet {}
   }
-  
+
   @available(*, unavailable)
   open override var allowsDefaultTighteningForTruncation: Bool {
     didSet {}
   }
-  
+
   @available(*, unavailable)
   open override func drawText(in rect: CGRect) {
     super.drawText(in: rect)
   }
-  
+
   @available(*, unavailable)
   open override var preferredMaxLayoutWidth: CGFloat {
     didSet {}
   }
-  
+
   // MARK: - Properties
-  
+
   public let node: D
+  private let wrapper: WrapperNode
   private let delegateProxy = __InterfaceStateDelegateProxy()
-  
+
   // MARK: - Initializers
-  
+
   public init(node: D, frame: CGRect = .zero) {
-    
+
     self.node = node
-    
+    self.wrapper = .init(wrapped: node)
+
     super.init(frame: frame)
-    
+
     // To call `textRect(forBounds bounds: CGRect, limitedToNumberOfLines numberOfLines: Int)`
     super.numberOfLines = 0
     isUserInteractionEnabled = true
-    
-    addSubnode(node)
-    node.add(delegateProxy)
-    
+
+    addSubnode(wrapper)
+    wrapper.add(delegateProxy)
+
     delegateProxy.didLayoutBlock = { [weak self] in
       self?.invalidateIntrinsicContentSize()
     }
-    
+
   }
-  
+
   @available(*, unavailable)
   public required init?(coder aDecoder: NSCoder) {
     fatalError("init(coder:) has not been implemented")
   }
-    
+
   deinit {
     node.remove(delegateProxy)
   }
-  
+
   open override func textRect(forBounds bounds: CGRect, limitedToNumberOfLines numberOfLines: Int) -> CGRect {
-    
+
     let validate: (_ value: CGFloat, _ fallback: CGFloat) -> CGFloat = { value, fallback in
       // To guard crash inside Texture
       guard ASPointsValidForSize(value) else {
@@ -163,70 +165,84 @@ open class NodeView<D: ASDisplayNode>: UILabel /* To use `textRect` method */ {
       }
       return value
     }
-    
+
     var range = ASSizeRangeUnconstrained
-    
+
     range.max.width = validate(bounds.width, 10000)
-    
-    let r = node.calculateLayoutThatFits(range)
+
+    let r = wrapper.calculateLayoutThatFits(range)
     Log.debug(bounds, r)
     return CGRect(origin: .zero, size: r.size)
   }
-  
+
   // MARK: - Functions
-  
+
   open override func layoutSubviews() {
-    
+
     super.layoutSubviews()
-    
-    node.frame = bounds
+
+    wrapper.frame = bounds
+  }
+}
+
+private final class WrapperNode: ASDisplayNode {
+
+  private let wrapped: ASDisplayNode
+
+  init(wrapped: ASDisplayNode) {
+    self.wrapped = wrapped
+    super.init()
+    addSubnode(wrapped)
+  }
+
+  override func layoutSpecThatFits(_ constrainedSize: ASSizeRange) -> ASLayoutSpec {
+    ASWrapperLayoutSpec(layoutElement: wrapped)
   }
 }
 
 private final class __InterfaceStateDelegateProxy: NSObject, ASInterfaceStateDelegate {
-  
+
   var didLayoutBlock: (() -> Void)?
-  
+
   @objc dynamic func interfaceStateDidChange(_ newState: ASInterfaceState, from oldState: ASInterfaceState) {
-    
+
   }
-  
+
   @objc dynamic func didEnterVisibleState() {
-    
+
   }
-  
+
   @objc dynamic func didExitVisibleState() {
-    
+
   }
-  
+
   func didEnterDisplayState() {
-    
+
   }
-  
+
   @objc dynamic func didExitDisplayState() {
-    
+
   }
-  
+
   @objc dynamic func didEnterPreloadState() {
-    
+
   }
-  
+
   @objc dynamic func didExitPreloadState() {
-    
+
   }
-  
+
   @objc dynamic func nodeDidLayout() {
     didLayoutBlock?()
   }
-  
-  @objc dynamic func nodeDidLoad() {
-    
-  }
-  
-  @objc dynamic func hierarchyDisplayDidFinish() {
-    
-  }
-  
-}
 
+  @objc dynamic func nodeDidLoad() {
+
+  }
+
+  @objc dynamic func hierarchyDisplayDidFinish() {
+
+  }
+
+}
 
