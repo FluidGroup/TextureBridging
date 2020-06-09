@@ -1,24 +1,37 @@
 PODS:
   - EasyPeasy (1.9.0)
+  - Reveal-SDK (26)
+  - StackScrollView (1.6.0)
   - Texture/Core (2.8.1)
+  - TextureSwiftSupport (1.8.0):
+    - Texture/Core (~> 2.8)
   - TypedTextAttributes (1.0.2)
 
 DEPENDENCIES:
   - EasyPeasy
+  - Reveal-SDK
+  - StackScrollView
   - Texture/Core
+  - TextureSwiftSupport
   - TypedTextAttributes
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - EasyPeasy
+    - Reveal-SDK
+    - StackScrollView
     - Texture
+    - TextureSwiftSupport
     - TypedTextAttributes
 
 SPEC CHECKSUMS:
   EasyPeasy: 19a84ef8f8bbcf925b9fecc29d1d78b7dab96718
+  Reveal-SDK: 5f94f14aff3d5f2a49f246edcd266fa4472679e9
+  StackScrollView: 96ea9f6b47522364bb7b4463ac46555c516ed72a
   Texture: 8ecf6984065a1e54f06bf97b349ecca28582acd7
+  TextureSwiftSupport: d41267636ebdc18555f83bb7a38a0170c8d59364
   TypedTextAttributes: 280e427de3ea96dec1d1869129e5e251b8f52f37
 
-PODFILE CHECKSUM: 3342b72bac67a538b64d69c2e47d6079f838effe
+PODFILE CHECKSUM: e0fbd9653f72fff3f4de56e97bd23df0a6ebd362
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.9.1

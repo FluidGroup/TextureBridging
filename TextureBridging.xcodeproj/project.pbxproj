@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,6 +19,7 @@
 		4B5E3530228BF56A00E6B966 /* Lorem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5E352F228BF56A00E6B966 /* Lorem.swift */; };
 		4B5E3532228BF64500E6B966 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5E3531228BF64500E6B966 /* Logger.swift */; };
 		4B8AC2E4231CDFF1009AD236 /* DemoImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8AC2E3231CDFF1009AD236 /* DemoImageViewController.swift */; };
+		4B9861A9248F79DF000E44A5 /* DemoStackScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9861A8248F79DF000E44A5 /* DemoStackScrollViewController.swift */; };
 		4BF2A95B228A812100CB3870 /* TextureBridging.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BF2A959228A812100CB3870 /* TextureBridging.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		540E3A1FD657EA36432DB0F9 /* Pods_TextureBridging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5114A756114C2BACD7844ED0 /* Pods_TextureBridging.framework */; };
 /* End PBXBuildFile section */
@@ -62,6 +63,7 @@
 		4B5E352F228BF56A00E6B966 /* Lorem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lorem.swift; sourceTree = "<group>"; };
 		4B5E3531228BF64500E6B966 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		4B8AC2E3231CDFF1009AD236 /* DemoImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoImageViewController.swift; sourceTree = "<group>"; };
+		4B9861A8248F79DF000E44A5 /* DemoStackScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoStackScrollViewController.swift; sourceTree = "<group>"; };
 		4BF239549C52EA9825FC5E8D /* Pods-TextureBridging.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextureBridging.debug.xcconfig"; path = "Target Support Files/Pods-TextureBridging/Pods-TextureBridging.debug.xcconfig"; sourceTree = "<group>"; };
 		4BF2A956228A812100CB3870 /* TextureBridging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TextureBridging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BF2A959228A812100CB3870 /* TextureBridging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextureBridging.h; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 				4B5E351A228BF3A000E6B966 /* AppDelegate.swift */,
 				4B5E351C228BF3A000E6B966 /* BridgeToAutoLayoutViewController.swift */,
 				4B8AC2E3231CDFF1009AD236 /* DemoImageViewController.swift */,
+				4B9861A8248F79DF000E44A5 /* DemoStackScrollViewController.swift */,
 				4B5E352F228BF56A00E6B966 /* Lorem.swift */,
 				4B5E351E228BF3A000E6B966 /* Main.storyboard */,
 				4B5E3521228BF3A000E6B966 /* Assets.xcassets */,
@@ -320,20 +323,11 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TextureBridgingDemo/Pods-TextureBridgingDemo-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Texture/AsyncDisplayKit.framework",
-				"${BUILT_PRODUCTS_DIR}/EasyPeasy/EasyPeasy.framework",
-				"${BUILT_PRODUCTS_DIR}/TypedTextAttributes/TypedTextAttributes.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-TextureBridgingDemo/Pods-TextureBridgingDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AsyncDisplayKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EasyPeasy.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TypedTextAttributes.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-TextureBridgingDemo/Pods-TextureBridgingDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -347,6 +341,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B9861A9248F79DF000E44A5 /* DemoStackScrollViewController.swift in Sources */,
 				4B5E351D228BF3A000E6B966 /* BridgeToAutoLayoutViewController.swift in Sources */,
 				4B5E3530228BF56A00E6B966 /* Lorem.swift in Sources */,
 				4B5E351B228BF3A000E6B966 /* AppDelegate.swift in Sources */,

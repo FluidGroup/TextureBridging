@@ -12,4 +12,7 @@ target 'TextureBridgingDemo' do
   pod 'Texture/Core'
   pod 'EasyPeasy'
   pod 'TypedTextAttributes'
+  pod 'StackScrollView'
+  pod 'TextureSwiftSupport'
+  pod 'Reveal-SDK'
 end

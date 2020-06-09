@@ -1,0 +1,6 @@
+framework module TextureSwiftSupport {
+  umbrella header "TextureSwiftSupport-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -193,8 +193,6 @@ private final class WrapperNode: ASDisplayNode {
     self.wrapped = wrapped
     super.init()
     addSubnode(wrapped)
-    wrapped.style.width = .init(unit: .fraction, value: 1)
-    wrapped.style.height = .init(unit: .fraction, value: 1)
   }
 
   override func layoutSpecThatFits(_ constrainedSize: ASSizeRange) -> ASLayoutSpec {

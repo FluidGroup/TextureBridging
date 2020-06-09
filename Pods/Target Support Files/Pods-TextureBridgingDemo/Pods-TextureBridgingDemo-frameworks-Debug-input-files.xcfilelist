@@ -1,0 +1,7 @@
+${PODS_ROOT}/Target Support Files/Pods-TextureBridgingDemo/Pods-TextureBridgingDemo-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Texture/AsyncDisplayKit.framework
+${BUILT_PRODUCTS_DIR}/EasyPeasy/EasyPeasy.framework
+${PODS_ROOT}/Reveal-SDK/RevealServer/iOS/RevealServer.framework
+${BUILT_PRODUCTS_DIR}/StackScrollView/StackScrollView.framework
+${BUILT_PRODUCTS_DIR}/TextureSwiftSupport/TextureSwiftSupport.framework
+${BUILT_PRODUCTS_DIR}/TypedTextAttributes/TypedTextAttributes.framework
