@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_TextureBridgingDemoVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_TextureBridgingDemoVersionString[];
+FOUNDATION_EXPORT double Pods_TextureBridging_TextureBridgingDemoVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_TextureBridging_TextureBridgingDemoVersionString[];
 

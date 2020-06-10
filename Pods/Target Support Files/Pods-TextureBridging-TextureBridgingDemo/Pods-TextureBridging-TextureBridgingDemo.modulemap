@@ -1,0 +1,6 @@
+framework module Pods_TextureBridging_TextureBridgingDemo {
+  umbrella header "Pods-TextureBridging-TextureBridgingDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

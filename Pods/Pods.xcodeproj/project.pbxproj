@@ -54,7 +54,6 @@
 		1291A6D63B4E3F2D01ACE11C8B17B5BF /* ASControlNode+tvOS.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9723706D3F0AC6C278AC0B3B92AE0244 /* ASControlNode+tvOS.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
 		1310A76E46C706204F1042B61642F5C0 /* NSAttributedString+ASText.h in Headers */ = {isa = PBXBuildFile; fileRef = 179AF5220D4F5E0F808BD58F94BC6F30 /* NSAttributedString+ASText.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		138A8E7D511C9DD37C75BF98420E448A /* ASTextKitEntityAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 81030DC00BFF277FA135E3C2A4020AE5 /* ASTextKitEntityAttribute.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		13D089367FD38D6D8B2AC3F73ED5FE6E /* Pods-TextureBridgingDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 25A1BE010A6BE3C26BBECC8E9442650F /* Pods-TextureBridgingDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		140245BD2A29806EE8471CD0529003AB /* ASCollectionView+Undeprecated.h in Headers */ = {isa = PBXBuildFile; fileRef = 96B3F2F9562F582BBF4C0BBF47E901DA /* ASCollectionView+Undeprecated.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		141728A666B577800C7958CB024699C6 /* ASTraceEvent.mm in Sources */ = {isa = PBXBuildFile; fileRef = A7402A059AA71E54C89F62B25F9C9BFA /* ASTraceEvent.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
 		145AE3C84CCB140B2FDECB6B97DB89D7 /* NamedDisplayNodeBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8551A1277CA8F9D9DC9F82F6C88E3D79 /* NamedDisplayNodeBase.swift */; };
@@ -142,11 +141,11 @@
 		419297600D651E0AAEEDCDE6857E1B85 /* ASEventLog.h in Headers */ = {isa = PBXBuildFile; fileRef = A9C21E29E0D0F783C1DF7772AEDA904A /* ASEventLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4222A218B27E41EA984287D3109FF1E2 /* ASDimension.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F929E553AA8CF6612A4C5FE19CA863F /* ASDimension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42D3B6E7BC06BF94C742BC71D7BA4637 /* ASDisplayNode+Yoga.mm in Sources */ = {isa = PBXBuildFile; fileRef = F1A555BAA43598AC3A6981FFCAD70CA1 /* ASDisplayNode+Yoga.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
-		43F8A4E868D4EA672ADC05EAC351B2D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F15ECDCFAEF91D4B5625133D4C81960 /* Foundation.framework */; };
 		443E80AEBFC0AC1AACD59960432F2EFF /* ASSignpost.h in Headers */ = {isa = PBXBuildFile; fileRef = 40DF5C44CEFB19D4AEC3E4E4348389A7 /* ASSignpost.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		444A8F75C60C76AD0895606CB88F1285 /* ASTextKitRenderer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 62B504B599689593B9F3EE4D39D8296A /* ASTextKitRenderer.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
 		447C116CF81E5A9E6419A8EEE55BC05D /* ASScrollNode.mm in Sources */ = {isa = PBXBuildFile; fileRef = 78002E444F02FF50D888CDEBE39824F4 /* ASScrollNode.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
 		44EF3A305F7FB394F7063A47ACBE70E7 /* ASBackgroundLayoutSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8F00D43DA5AD51EC875BE470DB24A76E /* ASBackgroundLayoutSpec.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
+		45B2E3E7F14F2FFDBF9920B7D8F047FD /* Pods-TextureBridging-TextureBridgingDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 609520810C68D4BBD22928A4E6996F30 /* Pods-TextureBridging-TextureBridgingDemo-dummy.m */; };
 		45E2CC149DB223F522EBBAF2AAAD232E /* ASTextKitEntityAttribute.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0DDC7CEAB1FAC5B5FFD0CCC436B5D342 /* ASTextKitEntityAttribute.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
 		46216DC9E0A64C9C3DA0039A4BC11C28 /* ASCellNode+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = ABC680F19C9265C11635C00C152DBD1A /* ASCellNode+Internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		4621B7301FC5D2D65F05A919660C0933 /* UIResponder+AsyncDisplayKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 54A9E8F138037C70CE02F1B3C7937A65 /* UIResponder+AsyncDisplayKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -176,7 +175,7 @@
 		53E0EA26D104028DF513227F73D3BB3D /* ASCollectionNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B49D80EBED710F7CD1D2DDBCE91F04F /* ASCollectionNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		546D47CEC9F29D7568FE443C3B9492A7 /* ASCollectionNode+Beta.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E77E7D8596A7BF7435753F8B391F280 /* ASCollectionNode+Beta.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		55A905E6238A8EE5B3F2117C9F5211B8 /* ASTipNode.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1FB0B8B49CA7C2A5C058116D57C5DF96 /* ASTipNode.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
-		560C5E80BDA14413146D5072667DEB95 /* Pods-TextureBridging-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8741FE75EEFEC8651159F800C89B02C4 /* Pods-TextureBridging-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		560C5E80BDA14413146D5072667DEB95 /* Pods-TextureBridging-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E457D8A99CED68A6C34D360F3469AD31 /* Pods-TextureBridging-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		560F6BA0E5B91F30642A6AE90918DA23 /* ASMainSerialQueue.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2999EC5C32AF762971A7D3BB2F2293BF /* ASMainSerialQueue.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
 		56D9EDBBB2A9CA12CD4009F716ED836B /* ASRangeManagingNode.h in Headers */ = {isa = PBXBuildFile; fileRef = C9D9CA8EA69AAFBE9B70E73D1BE89ACD /* ASRangeManagingNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		56F86B40296D082DE86370CF64FFBF41 /* ASEditableTextNode.mm in Sources */ = {isa = PBXBuildFile; fileRef = EECDCB03DDDDA2EE86D2678B859018BF /* ASEditableTextNode.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
@@ -219,6 +218,7 @@
 		6B94875E7660B54ED3AA4B48978D1821 /* ASSizeRange+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF7C97F7CF9575CFAE388CB8EC5B869 /* ASSizeRange+.swift */; };
 		6B97D6F8CF92625264BF5B2E6F97229D /* ASButtonNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 3911F012A823BF8EE614AF809C1743E1 /* ASButtonNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6B9A8383663F2AF5770D316AD4278E9B /* _ASTransitionContext.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9903611FED7A8247F158FC6CBFFC3745 /* _ASTransitionContext.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
+		6BCEE6E71A621387ACDDAD5BF9859587 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F15ECDCFAEF91D4B5625133D4C81960 /* Foundation.framework */; };
 		6C4A2DEB12FE1597C582EF51C8652AFB /* ReferenceAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5321791B17AAFD8793A078FB2E3D0E71 /* ReferenceAttribute.swift */; };
 		6C86D517096F828B96E660296BBD84A5 /* ASResponderChainEnumerator.mm in Sources */ = {isa = PBXBuildFile; fileRef = 86268C7533C7C2E05BC6CB332C40F111 /* ASResponderChainEnumerator.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
 		6CEABD28B554501803403EB91FB474B3 /* ASDisplayNode+AsyncDisplay.mm in Sources */ = {isa = PBXBuildFile; fileRef = DAA5FCEDFBD3D545814DBD11CC9FFF2C /* ASDisplayNode+AsyncDisplay.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
@@ -335,6 +335,7 @@
 		A4890376CF167B6864D4B15BFC11DAED /* AsyncDisplayKit+Tips.h in Headers */ = {isa = PBXBuildFile; fileRef = B3E02CD74383B864344D8870224C57A3 /* AsyncDisplayKit+Tips.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A49095F7D5B6AA6EC9643FCF742436B4 /* _ASHierarchyChangeSet.mm in Sources */ = {isa = PBXBuildFile; fileRef = 725743560530B0571884F7ECC0F85BE1 /* _ASHierarchyChangeSet.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
 		A4ABDCCDDC8096C6CE047B673A3179B9 /* ASAbsoluteLayoutElement.h in Headers */ = {isa = PBXBuildFile; fileRef = B7C15784DE6004A990C6CD006ADC6194 /* ASAbsoluteLayoutElement.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A4C2C68E49D02D307059CD314462BA9C /* Pods-TextureBridging-TextureBridgingDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F187B95FBE412D7D5D87F0FB73CBB92C /* Pods-TextureBridging-TextureBridgingDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A63D34ABD22C106A958ADF7758889C24 /* NSMutableAttributedString+TextKitAdditions.mm in Sources */ = {isa = PBXBuildFile; fileRef = 244217D27736B61CF4083E63A131A4E0 /* NSMutableAttributedString+TextKitAdditions.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
 		A66CB7B9749515273A78E6BF9522C80A /* ASTipProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = C481284888CCCCCEABBDEACAE190B739 /* ASTipProvider.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		A831C12E7408FBA4D93BAAC6C4273731 /* ASNetworkImageLoadInfo.mm in Sources */ = {isa = PBXBuildFile; fileRef = 757506FD22E1AC2752A9BB0BFC3A926A /* ASNetworkImageLoadInfo.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
@@ -402,7 +403,7 @@
 		C5327B1AC448C2EBA22BA6841EC5F799 /* _ASPendingState.mm in Sources */ = {isa = PBXBuildFile; fileRef = 71A44D7EBF5E58A7EFFE75B7E26BB014 /* _ASPendingState.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
 		C6CE68512CC06B4390295889661120D4 /* ASTextNode.mm in Sources */ = {isa = PBXBuildFile; fileRef = E05D0B54D87E4FFFD1B0C1698CF6AF4D /* ASTextNode.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
 		C7A3F2239FCD821D81952E13F1C72812 /* ASMainSerialQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 27AC4B5ED6765BA357F008E6E04C1630 /* ASMainSerialQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C7A7575C4D0A6974E692C8E31F5F3B54 /* Pods-TextureBridging-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 424A4E46B87750895F1082236C68D3CF /* Pods-TextureBridging-dummy.m */; };
+		C7A7575C4D0A6974E692C8E31F5F3B54 /* Pods-TextureBridging-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B930CB39445E600F6058B2AC91D8D2B7 /* Pods-TextureBridging-dummy.m */; };
 		C7D05C549FF05ED73481150F01C34E97 /* ASLayoutElementStylePrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 247304BDC5E9A2772513E093050A1899 /* ASLayoutElementStylePrivate.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		C8BE90B7DE6899CF98613F7B839F7E58 /* ASImageContainerProtocolCategories.h in Headers */ = {isa = PBXBuildFile; fileRef = 8935A2A3B4459E557232262E4421B6CC /* ASImageContainerProtocolCategories.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C90C6F3D81D4577913D3334CABBF1A66 /* ASCGImageBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 777E3ED8F97BABBDD903A6CC54702144 /* ASCGImageBuffer.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -410,7 +411,6 @@
 		CC8FAB5AB8E4F623544A5AAFC988A3AA /* ASLayoutElement.mm in Sources */ = {isa = PBXBuildFile; fileRef = A5AB2128737EC34C6DA59077E0A7FED2 /* ASLayoutElement.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
 		CC996B3DF720B16614C4F030F772D55B /* _ASDisplayLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = B4D51041DF3B9066F08A8C93F5C86F19 /* _ASDisplayLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CEF5F40305A438583F1DB804B35F2403 /* ASTableView+Undeprecated.h in Headers */ = {isa = PBXBuildFile; fileRef = AD6E37F9BE7DA9258D8D81FF2728FD89 /* ASTableView+Undeprecated.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		CF1897C89266526C7EF2F608209DBF89 /* Pods-TextureBridgingDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0D9EF42176D4C975D959148A2F4818 /* Pods-TextureBridgingDemo-dummy.m */; };
 		CFE1CF3179BDB3026C8F2FCD20BD5241 /* _ASPendingState.h in Headers */ = {isa = PBXBuildFile; fileRef = DED6C46FEBCA37DDE6E974F13641E6C3 /* _ASPendingState.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		D003EF1606B349B3E27DA1EB73B5EDBC /* ASCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 92B1D8CD9511874AAFD9F090E29FA82E /* ASCollectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D0BE9FDC6EA096DDDEB2E976F4A19E52 /* ASAbstractLayoutController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0248CB3374A1A453EF21079F8D336D4A /* ASAbstractLayoutController.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
@@ -499,40 +499,26 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		08A74A50D93C0EB8CA2EA020BF6D2787 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B2E70E01F503FF73C300641039658C86;
-			remoteInfo = TypedTextAttributes;
-		};
-		47A6BF10EC4B1791293C14D2AFDA6691 /* PBXContainerItemProxy */ = {
+		119E340AF38C36A5B21759D316319D59 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = DD0B0FC4388FC5A75BAC950EECAB2864;
 			remoteInfo = "Reveal-SDK";
 		};
-		5080939F96F4224EFC83228AE5269B1A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6BA0431BA2A336C411236968904E1386;
-			remoteInfo = TextureSwiftSupport;
-		};
-		7BF4246EA3043A965FFB1FFFE59E76F3 /* PBXContainerItemProxy */ = {
+		3F83FBB8E629EF2B84E8179D5E9A6A5B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 7AB385395597735698BB9CE5CEFC0EC3;
 			remoteInfo = EasyPeasy;
 		};
-		81BB3D44C49F1A6298ADB16AEB51F5E2 /* PBXContainerItemProxy */ = {
+		47B98033205098F53A382EB3DBB85ED0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DB66E43BC980D741F3C7C5CF3ACEEFA4;
-			remoteInfo = Texture;
+			remoteGlobalIDString = 6BA0431BA2A336C411236968904E1386;
+			remoteInfo = TextureSwiftSupport;
 		};
 		8BB6F8B4E7D60399F3F327DAC59D1BBE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -541,7 +527,7 @@
 			remoteGlobalIDString = DB66E43BC980D741F3C7C5CF3ACEEFA4;
 			remoteInfo = Texture;
 		};
-		98DEF93BE71FF970D96CE9CCCD64802D /* PBXContainerItemProxy */ = {
+		B80331DD94E6E94F8C11B211EC94288F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -555,12 +541,27 @@
 			remoteGlobalIDString = DB66E43BC980D741F3C7C5CF3ACEEFA4;
 			remoteInfo = Texture;
 		};
+		E67752D273B609895B3EF6C4994503E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B2E70E01F503FF73C300641039658C86;
+			remoteInfo = TypedTextAttributes;
+		};
+		F6B89A89DE67D254CA0066D606B52889 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB66E43BC980D741F3C7C5CF3ACEEFA4;
+			remoteInfo = Texture;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0040909B4728C9D7DE16272FE540C809 /* IGListAdapter+AsyncDisplayKit.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = "IGListAdapter+AsyncDisplayKit.mm"; path = "Source/IGListAdapter+AsyncDisplayKit.mm"; sourceTree = "<group>"; };
 		004EAFCF683B372008004DC412D98B98 /* ASRelativeLayoutSpec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASRelativeLayoutSpec.h; path = Source/Layout/ASRelativeLayoutSpec.h; sourceTree = "<group>"; };
 		00FA8CCC4252CB9ACEBAC3B931E111D9 /* ASPINRemoteImageDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASPINRemoteImageDownloader.h; path = Source/Details/ASPINRemoteImageDownloader.h; sourceTree = "<group>"; };
+		01ABD8F7DCFAE6EB77CF197780F97733 /* Pods-TextureBridging-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TextureBridging-acknowledgements.markdown"; sourceTree = "<group>"; };
 		0248CB3374A1A453EF21079F8D336D4A /* ASAbstractLayoutController.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASAbstractLayoutController.mm; path = Source/Details/ASAbstractLayoutController.mm; sourceTree = "<group>"; };
 		0260875157D51828E95B91A1B0077175 /* ASTextKitRenderer+Positioning.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ASTextKitRenderer+Positioning.h"; path = "Source/TextKit/ASTextKitRenderer+Positioning.h"; sourceTree = "<group>"; };
 		0280D760B45DB33E58D6F93BAF80EFEB /* EasyPeasy-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EasyPeasy-dummy.m"; sourceTree = "<group>"; };
@@ -593,6 +594,7 @@
 		146A1EA521B9C83C4B1380AC7968907C /* _ASDisplayViewAccessiblity.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _ASDisplayViewAccessiblity.h; path = Source/Details/_ASDisplayViewAccessiblity.h; sourceTree = "<group>"; };
 		1501EBE304C2778724070BCB08D1A55A /* ASBasicImageDownloader.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASBasicImageDownloader.mm; path = Source/Details/ASBasicImageDownloader.mm; sourceTree = "<group>"; };
 		1678EE0E88B97D0E49C24E4388FB3B5D /* ASCollectionLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASCollectionLayout.h; path = Source/Private/ASCollectionLayout.h; sourceTree = "<group>"; };
+		16FD7ADCBA12381B905CD745904F135F /* Pods-TextureBridging.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TextureBridging.debug.xcconfig"; sourceTree = "<group>"; };
 		1781BC13859770BC874E104D0E5C3AFD /* ASTextKitRenderer+TextChecking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ASTextKitRenderer+TextChecking.h"; path = "Source/TextKit/ASTextKitRenderer+TextChecking.h"; sourceTree = "<group>"; };
 		179AF5220D4F5E0F808BD58F94BC6F30 /* NSAttributedString+ASText.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSAttributedString+ASText.h"; path = "Source/Private/TextExperiment/Utility/NSAttributedString+ASText.h"; sourceTree = "<group>"; };
 		17E8898CC2FC3686DBAEBA758A4DB1C2 /* Constant.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constant.swift; path = EasyPeasy/Constant.swift; sourceTree = "<group>"; };
@@ -604,6 +606,7 @@
 		1BAF6BEBDBE9AFD1F4F811B32A07DE79 /* ASStackPositionedLayout.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASStackPositionedLayout.mm; path = Source/Private/Layout/ASStackPositionedLayout.mm; sourceTree = "<group>"; };
 		1BBB58036F0FFC7F41640A2C09C1AA44 /* ASTip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASTip.h; path = Source/Private/ASTip.h; sourceTree = "<group>"; };
 		1C194A8E90D90509110149E713047631 /* ASElementMap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASElementMap.h; path = Source/Details/ASElementMap.h; sourceTree = "<group>"; };
+		1C5C37520AB92B0C05F14DD816A61033 /* Pods-TextureBridging-TextureBridgingDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TextureBridging-TextureBridgingDemo-acknowledgements.plist"; sourceTree = "<group>"; };
 		1DC5B905B5C67C35AC5BA186F44225B0 /* ASTextKitRenderer+Positioning.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = "ASTextKitRenderer+Positioning.mm"; path = "Source/TextKit/ASTextKitRenderer+Positioning.mm"; sourceTree = "<group>"; };
 		1E84A38378B2D8BE5330C5BDD992A718 /* ASStackLayoutDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASStackLayoutDefines.h; path = Source/Layout/ASStackLayoutDefines.h; sourceTree = "<group>"; };
 		1E9D9D873463CE90CEC32549064B695E /* Context.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Context.swift; path = EasyPeasy/Context.swift; sourceTree = "<group>"; };
@@ -612,25 +615,26 @@
 		2014433011215219F0B007F67A7BB0E3 /* NSMutableAttributedString+TextKitAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMutableAttributedString+TextKitAdditions.h"; path = "Source/Details/NSMutableAttributedString+TextKitAdditions.h"; sourceTree = "<group>"; };
 		205E5DF032341B83D4C6BC48FE4C40B8 /* ASRelativeLayoutSpec.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASRelativeLayoutSpec.mm; path = Source/Layout/ASRelativeLayoutSpec.mm; sourceTree = "<group>"; };
 		214396FDC2093D8749B7840241FCAB8A /* ASRangeControllerUpdateRangeProtocol+Beta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ASRangeControllerUpdateRangeProtocol+Beta.h"; path = "Source/Details/ASRangeControllerUpdateRangeProtocol+Beta.h"; sourceTree = "<group>"; };
+		22AEA0C7B56CD1E69CDB80A7DF1441FD /* Pods_TextureBridging_TextureBridgingDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TextureBridging_TextureBridgingDemo.framework; path = "Pods-TextureBridging-TextureBridgingDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22FBD6A1B4C193CF644932B9D0492196 /* ASLayoutElementExtensibility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASLayoutElementExtensibility.h; path = Source/Layout/ASLayoutElementExtensibility.h; sourceTree = "<group>"; };
 		23918A484D6E9C31AEC6E0901B82E257 /* ASNetworkImageNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASNetworkImageNode.h; path = Source/ASNetworkImageNode.h; sourceTree = "<group>"; };
 		244217D27736B61CF4083E63A131A4E0 /* NSMutableAttributedString+TextKitAdditions.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = "NSMutableAttributedString+TextKitAdditions.mm"; path = "Source/Details/NSMutableAttributedString+TextKitAdditions.mm"; sourceTree = "<group>"; };
 		247304BDC5E9A2772513E093050A1899 /* ASLayoutElementStylePrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASLayoutElementStylePrivate.h; path = Source/Private/Layout/ASLayoutElementStylePrivate.h; sourceTree = "<group>"; };
 		251644EB3484FDC8AABCC9CE2A973EDB /* ASNetworkImageLoadInfo+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ASNetworkImageLoadInfo+Private.h"; path = "Source/Private/ASNetworkImageLoadInfo+Private.h"; sourceTree = "<group>"; };
 		256177EE1282815BF849643FD731801E /* ASDisplayNode+Ancestry.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = "ASDisplayNode+Ancestry.mm"; path = "Source/Base/ASDisplayNode+Ancestry.mm"; sourceTree = "<group>"; };
-		25A1BE010A6BE3C26BBECC8E9442650F /* Pods-TextureBridgingDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TextureBridgingDemo-umbrella.h"; sourceTree = "<group>"; };
 		261817061AC957C316A91D4FAFD2A866 /* ASTextKitShadower.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASTextKitShadower.mm; path = Source/TextKit/ASTextKitShadower.mm; sourceTree = "<group>"; };
 		267E2B398F64F009B68A6495DB6EF645 /* ASBatchFetching.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASBatchFetching.mm; path = Source/Private/ASBatchFetching.mm; sourceTree = "<group>"; };
 		276E5554D0D5AAE14AA2EC8DB3E56765 /* ASImageNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASImageNode.h; path = Source/ASImageNode.h; sourceTree = "<group>"; };
 		27AABA3FAB1C8B479AD9FB96034C4B66 /* ASControlNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASControlNode.h; path = Source/ASControlNode.h; sourceTree = "<group>"; };
 		27AC4B5ED6765BA357F008E6E04C1630 /* ASMainSerialQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASMainSerialQueue.h; path = Source/Details/ASMainSerialQueue.h; sourceTree = "<group>"; };
 		27E4E932DAB2BB6B0E9A3C1BFB42CA50 /* ASLayoutTransition.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASLayoutTransition.mm; path = Source/Private/ASLayoutTransition.mm; sourceTree = "<group>"; };
-		28AD7883C7E3FCCD7D772AC039989E38 /* Pods-TextureBridging-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TextureBridging-acknowledgements.plist"; sourceTree = "<group>"; };
 		292E5BDA0B63E68ABA03334FF6072C24 /* ASInsetLayoutSpec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASInsetLayoutSpec.h; path = Source/Layout/ASInsetLayoutSpec.h; sourceTree = "<group>"; };
+		2952BC7F31EE4D132463C38DCA759055 /* Pods-TextureBridging-TextureBridgingDemo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TextureBridging-TextureBridgingDemo-Info.plist"; sourceTree = "<group>"; };
 		2999EC5C32AF762971A7D3BB2F2293BF /* ASMainSerialQueue.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASMainSerialQueue.mm; path = Source/Details/ASMainSerialQueue.mm; sourceTree = "<group>"; };
 		2AFDA1AC1940524A54B2239A0D5970C5 /* ASRatioLayoutSpec.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASRatioLayoutSpec.mm; path = Source/Layout/ASRatioLayoutSpec.mm; sourceTree = "<group>"; };
 		2B49D80EBED710F7CD1D2DDBCE91F04F /* ASCollectionNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASCollectionNode.h; path = Source/ASCollectionNode.h; sourceTree = "<group>"; };
 		2B513C25709E30AA58BC69E36E02A367 /* UIImage+ASConvenience.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+ASConvenience.h"; path = "Source/UIImage+ASConvenience.h"; sourceTree = "<group>"; };
+		2BE8BD9C9669B6BA6C089906A1C29C4B /* Pods-TextureBridging.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TextureBridging.release.xcconfig"; sourceTree = "<group>"; };
 		2CA68D63ECB9F8806FCE43059A35B08E /* ASAsciiArtBoxCreator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASAsciiArtBoxCreator.h; path = Source/Layout/ASAsciiArtBoxCreator.h; sourceTree = "<group>"; };
 		2CEDF9C20CA445E63DFCC4744B304DBE /* _ASDisplayViewAccessiblity.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = _ASDisplayViewAccessiblity.mm; path = Source/Details/_ASDisplayViewAccessiblity.mm; sourceTree = "<group>"; };
 		2D6D4D946DB7113A41FE52C253F5D32B /* ASTwoDimensionalArrayUtils.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASTwoDimensionalArrayUtils.mm; path = Source/Private/ASTwoDimensionalArrayUtils.mm; sourceTree = "<group>"; };
@@ -670,7 +674,6 @@
 		416A77FE93E86FA18EF847F03E7E176D /* _ASCollectionGalleryLayoutItem.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = _ASCollectionGalleryLayoutItem.mm; path = Source/Private/_ASCollectionGalleryLayoutItem.mm; sourceTree = "<group>"; };
 		4195A1F81172ED1842CEF32683670CAF /* ASEqualityHelpers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASEqualityHelpers.h; path = Source/Base/ASEqualityHelpers.h; sourceTree = "<group>"; };
 		41C3EE0E45616DC3E559568A2ABC4C69 /* _ASCollectionViewCell.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = _ASCollectionViewCell.mm; path = Source/Details/_ASCollectionViewCell.mm; sourceTree = "<group>"; };
-		424A4E46B87750895F1082236C68D3CF /* Pods-TextureBridging-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TextureBridging-dummy.m"; sourceTree = "<group>"; };
 		4293AB31B586F15AF3266CC327003FCE /* ASResponderChainEnumerator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASResponderChainEnumerator.h; path = Source/Private/ASResponderChainEnumerator.h; sourceTree = "<group>"; };
 		430FD6BDE40359A22AD0225A04B1CC96 /* ASDisplayNodeExtras.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASDisplayNodeExtras.mm; path = Source/ASDisplayNodeExtras.mm; sourceTree = "<group>"; };
 		438F2AE0FAD2121BAABBD65EFA43104B /* Attribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Attribute.swift; path = EasyPeasy/Attribute.swift; sourceTree = "<group>"; };
@@ -680,9 +683,7 @@
 		460ABB73D9232A7764520A0E305888EB /* ASCollectionViewLayoutController.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASCollectionViewLayoutController.mm; path = Source/Details/ASCollectionViewLayoutController.mm; sourceTree = "<group>"; };
 		46216A7F13002EE638ECD2B0231AF7FE /* ASTextDebugOption.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASTextDebugOption.h; path = Source/Private/TextExperiment/Component/ASTextDebugOption.h; sourceTree = "<group>"; };
 		4622CF794B04E9526D4124DEEFAFB84C /* ASPagerNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASPagerNode.h; path = Source/ASPagerNode.h; sourceTree = "<group>"; };
-		466BEED8F3D1106BB33418DE09395943 /* Pods_TextureBridgingDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TextureBridgingDemo.framework; path = "Pods-TextureBridgingDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4744284329DA36891786EB608FE2C465 /* TextureSwiftSupport.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TextureSwiftSupport.modulemap; sourceTree = "<group>"; };
-		4884DEFAA4C79A84964958F4CE32A68F /* Pods-TextureBridging.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TextureBridging.release.xcconfig"; sourceTree = "<group>"; };
 		490992F9CBB6FF091423464EAA3F38CB /* ASTextKitTailTruncater.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASTextKitTailTruncater.h; path = Source/TextKit/ASTextKitTailTruncater.h; sourceTree = "<group>"; };
 		4966621FFABBF5A6D69E4DB3CA114AA8 /* ASTextKitTruncating.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASTextKitTruncating.h; path = Source/TextKit/ASTextKitTruncating.h; sourceTree = "<group>"; };
 		49B70A5F6AC774968E4EAAFC75E9FF3F /* ASOverlayLayoutSpec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASOverlayLayoutSpec.h; path = Source/Layout/ASOverlayLayoutSpec.h; sourceTree = "<group>"; };
@@ -695,7 +696,6 @@
 		4E61B16F7B25DFA1E7F299076746F235 /* DimensionAttribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DimensionAttribute.swift; path = EasyPeasy/DimensionAttribute.swift; sourceTree = "<group>"; };
 		4E77E7D8596A7BF7435753F8B391F280 /* ASCollectionNode+Beta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ASCollectionNode+Beta.h"; path = "Source/ASCollectionNode+Beta.h"; sourceTree = "<group>"; };
 		4F15ECDCFAEF91D4B5625133D4C81960 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		4F1C3558B2F3436DD86E35B15079EBFF /* Pods-TextureBridgingDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TextureBridgingDemo.release.xcconfig"; sourceTree = "<group>"; };
 		4FD02581F4E5647CA48D0DFB152C935E /* StackScrollView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = StackScrollView.framework; path = StackScrollView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FEE5B3A2E429F1E44833AF811E6F4EB /* ASLayoutSpecPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASLayoutSpecPrivate.h; path = Source/Private/Layout/ASLayoutSpecPrivate.h; sourceTree = "<group>"; };
 		4FF0E0AA50A85C583FECF86A3F2BD0C5 /* ASBatchFetching.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASBatchFetching.h; path = Source/Private/ASBatchFetching.h; sourceTree = "<group>"; };
@@ -729,6 +729,7 @@
 		5F87407B0D3F0BECE898FAB4830EBEA4 /* ASMutableAttributedStringBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASMutableAttributedStringBuilder.h; path = Source/Details/ASMutableAttributedStringBuilder.h; sourceTree = "<group>"; };
 		6067017DD5FE6501BF967D04C2650418 /* _ASDisplayLayer.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = _ASDisplayLayer.mm; path = Source/Details/_ASDisplayLayer.mm; sourceTree = "<group>"; };
 		607DF6C3774A91B4FBD73EF00C1F1E07 /* ASVideoPlayerNode.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASVideoPlayerNode.mm; path = Source/ASVideoPlayerNode.mm; sourceTree = "<group>"; };
+		609520810C68D4BBD22928A4E6996F30 /* Pods-TextureBridging-TextureBridgingDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TextureBridging-TextureBridgingDemo-dummy.m"; sourceTree = "<group>"; };
 		60C54534CD66462C74A85EEDB8C23563 /* ASTableViewInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASTableViewInternal.h; path = Source/ASTableViewInternal.h; sourceTree = "<group>"; };
 		61216C30C099613B0637BB67B70A71EE /* _ASAsyncTransaction.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = _ASAsyncTransaction.mm; path = Source/Details/Transactions/_ASAsyncTransaction.mm; sourceTree = "<group>"; };
 		61225876BA95DB9D216743011FC0FD18 /* ASAvailability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASAvailability.h; path = Source/Base/ASAvailability.h; sourceTree = "<group>"; };
@@ -743,7 +744,6 @@
 		62B504B599689593B9F3EE4D39D8296A /* ASTextKitRenderer.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASTextKitRenderer.mm; path = Source/TextKit/ASTextKitRenderer.mm; sourceTree = "<group>"; };
 		62C1DFC78BFB33E2386D3E711760327F /* ASLayerBackingTipProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASLayerBackingTipProvider.h; path = Source/Private/ASLayerBackingTipProvider.h; sourceTree = "<group>"; };
 		6388BC0C9B2C648423B17A57491A0A54 /* ASNavigationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASNavigationController.h; path = Source/ASNavigationController.h; sourceTree = "<group>"; };
-		644233E65177DFAA91C9FF5BCC42B55E /* Pods-TextureBridging.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TextureBridging.debug.xcconfig"; sourceTree = "<group>"; };
 		65330EEDB84A5FD699D2EBAE604CA89D /* _ASCollectionGalleryLayoutInfo.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = _ASCollectionGalleryLayoutInfo.mm; path = Source/Private/_ASCollectionGalleryLayoutInfo.mm; sourceTree = "<group>"; };
 		6542BF7B2ED0DED180D0055AE2C19E38 /* ASRangeController.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASRangeController.mm; path = Source/Details/ASRangeController.mm; sourceTree = "<group>"; };
 		65A2B07D54FD9BD2A313421175814574 /* ASImageNode+AnimatedImage.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = "ASImageNode+AnimatedImage.mm"; path = "Source/ASImageNode+AnimatedImage.mm"; sourceTree = "<group>"; };
@@ -755,7 +755,6 @@
 		68EC2362A34735B3C929CF3DCC91D60D /* ASSection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASSection.h; path = Source/Private/ASSection.h; sourceTree = "<group>"; };
 		6938817E9A2D48EC744E6436033B40E9 /* Priority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Priority.swift; path = EasyPeasy/Priority.swift; sourceTree = "<group>"; };
 		69F42F3CEF5C0764BA41C1FA23D124D5 /* TextureSwiftSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextureSwiftSupport.swift; path = TextureSwiftSupport/TextureSwiftSupport.swift; sourceTree = "<group>"; };
-		69FAEA7E2CFCEE6F684DE062C2FAAFBA /* Pods-TextureBridging-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TextureBridging-acknowledgements.markdown"; sourceTree = "<group>"; };
 		6A79D7526587FD3E9579A0B0EF85DFF3 /* GradientNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GradientNode.swift; path = TextureSwiftSupport/Components/Elements/GradientNode.swift; sourceTree = "<group>"; };
 		6ABDA258ECD5A6097EDE7C3E08156BE1 /* ASDisplayNodeCornerLayerDelegate.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASDisplayNodeCornerLayerDelegate.mm; path = Source/Private/ASDisplayNodeCornerLayerDelegate.mm; sourceTree = "<group>"; };
 		6AF0F23EA1227C440A8806FCA8971EFE /* ASDimensionInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDimensionInternal.h; path = Source/Layout/ASDimensionInternal.h; sourceTree = "<group>"; };
@@ -765,7 +764,6 @@
 		6D15DF695D9C6F17A44B0BEFB77F5697 /* ASImageNode+tvOS.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = "ASImageNode+tvOS.mm"; path = "Source/tvOS/ASImageNode+tvOS.mm"; sourceTree = "<group>"; };
 		6D42B17A219135127B25A2215A6A4FE1 /* ASDisplayNodeTipState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDisplayNodeTipState.h; path = Source/Private/ASDisplayNodeTipState.h; sourceTree = "<group>"; };
 		6DEAC27E51213268629F308A1AEA8238 /* _ASDisplayView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _ASDisplayView.h; path = Source/Details/_ASDisplayView.h; sourceTree = "<group>"; };
-		6E047BD243E4B84D4B820AFF860A9EE7 /* Pods-TextureBridgingDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TextureBridgingDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
 		6E5031D2552A2018CBEBD12377CC5102 /* ASHashing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASHashing.h; path = Source/Details/ASHashing.h; sourceTree = "<group>"; };
 		6E939C90E07249A88BF34138C532C1F5 /* ASDataController.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASDataController.mm; path = Source/Details/ASDataController.mm; sourceTree = "<group>"; };
 		6EBC402DA86D2BA57862D06C69E3ECF9 /* _ASAsyncTransactionContainer.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = _ASAsyncTransactionContainer.mm; path = Source/Details/Transactions/_ASAsyncTransactionContainer.mm; sourceTree = "<group>"; };
@@ -813,7 +811,6 @@
 		7E0C916E2C06FB999755F2FFCE8D49EA /* ASAssert.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASAssert.h; path = Source/Base/ASAssert.h; sourceTree = "<group>"; };
 		7E184B5CF64A68B5ECB78427EDC5077A /* ASControlNode.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASControlNode.mm; path = Source/ASControlNode.mm; sourceTree = "<group>"; };
 		7E22723522F17A887D31B859CA11D4A9 /* ASDelegateProxy.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASDelegateProxy.mm; path = Source/Details/ASDelegateProxy.mm; sourceTree = "<group>"; };
-		7E697D1606540441F04394721FE7823D /* Pods-TextureBridgingDemo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TextureBridgingDemo-Info.plist"; sourceTree = "<group>"; };
 		7EC7303B20E0663FADE4CA59D502C05B /* StackScrollView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = StackScrollView.release.xcconfig; sourceTree = "<group>"; };
 		81030DC00BFF277FA135E3C2A4020AE5 /* ASTextKitEntityAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASTextKitEntityAttribute.h; path = Source/TextKit/ASTextKitEntityAttribute.h; sourceTree = "<group>"; };
 		8210DD3DDCB69D91B9032A7FD00F117B /* ASSectionController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASSectionController.h; path = Source/ASSectionController.h; sourceTree = "<group>"; };
@@ -823,13 +820,13 @@
 		83CF25F190F500D0E0F2C932593D4CF5 /* ASTextLayout.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASTextLayout.mm; path = Source/Private/TextExperiment/Component/ASTextLayout.mm; sourceTree = "<group>"; };
 		83F9D544985A7DC00FEA798E3B63E2F1 /* ASEventLog.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASEventLog.mm; path = Source/Details/ASEventLog.mm; sourceTree = "<group>"; };
 		844720DE98F09374601ACB4788320C3E /* ASCollectionLayoutContext.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASCollectionLayoutContext.mm; path = Source/Details/ASCollectionLayoutContext.mm; sourceTree = "<group>"; };
+		847B90A2721AE6C900B7C77A9365AE65 /* Pods-TextureBridging-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TextureBridging-Info.plist"; sourceTree = "<group>"; };
 		851C02D65907E560A1092F8AD708849F /* ASMultiplexImageNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASMultiplexImageNode.h; path = Source/ASMultiplexImageNode.h; sourceTree = "<group>"; };
 		8551A1277CA8F9D9DC9F82F6C88E3D79 /* NamedDisplayNodeBase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NamedDisplayNodeBase.swift; path = TextureSwiftSupport/Tools/NamedDisplayNodeBase.swift; sourceTree = "<group>"; };
 		85630A690310F43A4FECD33ADE917557 /* TypedTextAttributes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TypedTextAttributes.debug.xcconfig; sourceTree = "<group>"; };
 		85BCBFEA681C986D85E9E430FFCAA466 /* ASCollectionViewFlowLayoutInspector.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASCollectionViewFlowLayoutInspector.mm; path = Source/Private/ASCollectionViewFlowLayoutInspector.mm; sourceTree = "<group>"; };
 		86268C7533C7C2E05BC6CB332C40F111 /* ASResponderChainEnumerator.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASResponderChainEnumerator.mm; path = Source/Private/ASResponderChainEnumerator.mm; sourceTree = "<group>"; };
 		862C9F682E16932F11B0060E33C05167 /* ASLayoutElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASLayoutElement.h; path = Source/Layout/ASLayoutElement.h; sourceTree = "<group>"; };
-		8741FE75EEFEC8651159F800C89B02C4 /* Pods-TextureBridging-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TextureBridging-umbrella.h"; sourceTree = "<group>"; };
 		8742EB52396D82AA9B36B42A93C22B36 /* ASTextInput.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASTextInput.mm; path = Source/Private/TextExperiment/Component/ASTextInput.mm; sourceTree = "<group>"; };
 		8859DD8539D6DAA9C7AF0825151A715F /* AsyncDisplayKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AsyncDisplayKit.h; path = Source/AsyncDisplayKit.h; sourceTree = "<group>"; };
 		8875E616B361AA5518705BEF1C641929 /* NSParagraphStyle+ASText.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSParagraphStyle+ASText.h"; path = "Source/Private/TextExperiment/Utility/NSParagraphStyle+ASText.h"; sourceTree = "<group>"; };
@@ -847,7 +844,6 @@
 		8CD11CE4FE2EE0B2A0CF873BEE703684 /* ASTraceEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASTraceEvent.h; path = Source/Details/ASTraceEvent.h; sourceTree = "<group>"; };
 		8CDAD888F47B3E335AB5605915E127E5 /* ASIntegerMap.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASIntegerMap.mm; path = Source/Details/ASIntegerMap.mm; sourceTree = "<group>"; };
 		8CF280AB0A8A2EA0304BF6532B1FCD0B /* ASTextRunDelegate.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASTextRunDelegate.mm; path = Source/Private/TextExperiment/String/ASTextRunDelegate.mm; sourceTree = "<group>"; };
-		8DA2C9A5E4D20AC5A7A75AB9F3DF2C91 /* Pods-TextureBridgingDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TextureBridgingDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		8EB326D47B525DF6A3737ED7D3AB814D /* StackScrollView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "StackScrollView-Info.plist"; sourceTree = "<group>"; };
 		8EEC64AD6313E2DC19046747CBB4EC68 /* ASYogaUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASYogaUtilities.h; path = Source/Layout/ASYogaUtilities.h; sourceTree = "<group>"; };
 		8F00D43DA5AD51EC875BE470DB24A76E /* ASBackgroundLayoutSpec.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASBackgroundLayoutSpec.mm; path = Source/Layout/ASBackgroundLayoutSpec.mm; sourceTree = "<group>"; };
@@ -870,11 +866,11 @@
 		9766F822EF627C9A472250BAD6170CB7 /* ASTextKitComponents.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASTextKitComponents.h; path = Source/TextKit/ASTextKitComponents.h; sourceTree = "<group>"; };
 		977C432A682891DE9CFECBC5AD7F0FF8 /* ASVideoNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASVideoNode.h; path = Source/ASVideoNode.h; sourceTree = "<group>"; };
 		98325EE0B52528FDD29C79F24B6DC4A9 /* ASMutableAttributedStringBuilder.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASMutableAttributedStringBuilder.mm; path = Source/Details/ASMutableAttributedStringBuilder.mm; sourceTree = "<group>"; };
-		9842756C456F3DEB1229353E4B30E1C2 /* Pods-TextureBridging-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TextureBridging-Info.plist"; sourceTree = "<group>"; };
 		9903611FED7A8247F158FC6CBFFC3745 /* _ASTransitionContext.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = _ASTransitionContext.mm; path = Source/_ASTransitionContext.mm; sourceTree = "<group>"; };
 		996B9B0D8B09E13F7BE1076B31335F33 /* ASLayerBackingTipProvider.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASLayerBackingTipProvider.mm; path = Source/Private/ASLayerBackingTipProvider.mm; sourceTree = "<group>"; };
 		9AB0C16E5793F76D63B865C606F71683 /* ASTextUtilities.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASTextUtilities.mm; path = Source/Private/TextExperiment/Utility/ASTextUtilities.mm; sourceTree = "<group>"; };
 		9BC22C8259E25725C1017EAE5BC44071 /* ASLocking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASLocking.h; path = Source/ASLocking.h; sourceTree = "<group>"; };
+		9BCBA6BCE78D32453E1A7D22662C8408 /* Pods-TextureBridging-TextureBridgingDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TextureBridging-TextureBridgingDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9C109E881744E6A7A7A7859D1715084F /* ASWeakMap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASWeakMap.h; path = Source/Private/ASWeakMap.h; sourceTree = "<group>"; };
 		9CA31034C6134D27039B4FD4660F9081 /* ASCollectionLayoutDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASCollectionLayoutDefines.h; path = Source/Private/ASCollectionLayoutDefines.h; sourceTree = "<group>"; };
 		9CDB0B1592DF28D6441661508F849CF2 /* ASLayoutManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASLayoutManager.h; path = Source/TextKit/ASLayoutManager.h; sourceTree = "<group>"; };
@@ -899,6 +895,7 @@
 		A279D73E8890AA9C1BAEEFF0DEC666EA /* PositionAttribute+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PositionAttribute+UIKit.swift"; path = "EasyPeasy/PositionAttribute+UIKit.swift"; sourceTree = "<group>"; };
 		A2C4E34B2AD66C5873B863CE2DB1A60A /* Texture-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Texture-Info.plist"; sourceTree = "<group>"; };
 		A308E730F56358BB6029711A6FFCAB58 /* ASThread.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASThread.h; path = Source/Details/ASThread.h; sourceTree = "<group>"; };
+		A4645306753902691BD6817E1E284AF8 /* Pods-TextureBridging-TextureBridgingDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TextureBridging-TextureBridgingDemo-frameworks.sh"; sourceTree = "<group>"; };
 		A473A9445E7F1BC6A6A1E47F008F084A /* ASCollectionGalleryLayoutDelegate.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASCollectionGalleryLayoutDelegate.mm; path = Source/Details/ASCollectionGalleryLayoutDelegate.mm; sourceTree = "<group>"; };
 		A4DF293A812EEE41F7166A4FBDE4CB64 /* ASTipsWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASTipsWindow.h; path = Source/Private/ASTipsWindow.h; sourceTree = "<group>"; };
 		A5AB2128737EC34C6DA59077E0A7FED2 /* ASLayoutElement.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASLayoutElement.mm; path = Source/Layout/ASLayoutElement.mm; sourceTree = "<group>"; };
@@ -910,12 +907,10 @@
 		A82E2DFD52583C6D5A0EC52CFC72FBDF /* ASDispatch.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASDispatch.mm; path = Source/Private/ASDispatch.mm; sourceTree = "<group>"; };
 		A859B900F232CD0645C4CC78471A39C6 /* Texture.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Texture.modulemap; sourceTree = "<group>"; };
 		A8FA9ED6BDCF70C3C5079519D4B89420 /* UILayoutGuide+Easy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILayoutGuide+Easy.swift"; path = "EasyPeasy/UILayoutGuide+Easy.swift"; sourceTree = "<group>"; };
-		A94807C0676BD9CBA59210F7CCD36A6A /* Pods-TextureBridgingDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TextureBridgingDemo.modulemap"; sourceTree = "<group>"; };
 		A9C21E29E0D0F783C1DF7772AEDA904A /* ASEventLog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASEventLog.h; path = Source/Details/ASEventLog.h; sourceTree = "<group>"; };
 		AA25E09205041711BC479CAEB4792EE3 /* ASImageNode+CGExtras.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = "ASImageNode+CGExtras.mm"; path = "Source/Private/ASImageNode+CGExtras.mm"; sourceTree = "<group>"; };
 		AA652F013F345BD25DDB3B6334D158B7 /* Reveal-SDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Reveal-SDK.release.xcconfig"; sourceTree = "<group>"; };
 		ABC680F19C9265C11635C00C152DBD1A /* ASCellNode+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ASCellNode+Internal.h"; path = "Source/Private/ASCellNode+Internal.h"; sourceTree = "<group>"; };
-		AC0D9EF42176D4C975D959148A2F4818 /* Pods-TextureBridgingDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TextureBridgingDemo-dummy.m"; sourceTree = "<group>"; };
 		AC98AB0B17720B0E922F646D4642417E /* ASTextKitRenderer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASTextKitRenderer.h; path = Source/TextKit/ASTextKitRenderer.h; sourceTree = "<group>"; };
 		AD0372D72DFB36B3C244C54642335A3B /* Collection+Easy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Collection+Easy.swift"; path = "EasyPeasy/Collection+Easy.swift"; sourceTree = "<group>"; };
 		AD23A7ED5DC291EDC5FE3472DBECE172 /* DimensionAttribute+AppKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DimensionAttribute+AppKit.swift"; path = "EasyPeasy/DimensionAttribute+AppKit.swift"; sourceTree = "<group>"; };
@@ -923,6 +918,7 @@
 		AD6E37F9BE7DA9258D8D81FF2728FD89 /* ASTableView+Undeprecated.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ASTableView+Undeprecated.h"; path = "Source/Private/ASTableView+Undeprecated.h"; sourceTree = "<group>"; };
 		AD780C9681D91421C8517A0C8B31EBCD /* MethodChain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MethodChain.swift; path = TextureSwiftSupport/SpecBuilder/MethodChain.swift; sourceTree = "<group>"; };
 		AD7DD1DE72D60D4CED4E8834241CEE53 /* _ASCollectionGalleryLayoutItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _ASCollectionGalleryLayoutItem.h; path = Source/Private/_ASCollectionGalleryLayoutItem.h; sourceTree = "<group>"; };
+		AE614269D8E2CE7D96136D8E1FEC9402 /* Pods-TextureBridging-TextureBridgingDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TextureBridging-TextureBridgingDemo.modulemap"; sourceTree = "<group>"; };
 		AF3E7836F5E9CD978CD64A5992021594 /* ASHashing.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASHashing.mm; path = Source/Details/ASHashing.mm; sourceTree = "<group>"; };
 		AF8C30F4CFCE2B599D0868497018F2E3 /* ASDisplayNodeCornerLayerDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDisplayNodeCornerLayerDelegate.h; path = Source/Private/ASDisplayNodeCornerLayerDelegate.h; sourceTree = "<group>"; };
 		B015F2CDAB80A7E4644531D1FB9EDA1C /* ASTextKitCoreTextAdditions.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASTextKitCoreTextAdditions.mm; path = Source/TextKit/ASTextKitCoreTextAdditions.mm; sourceTree = "<group>"; };
@@ -946,6 +942,7 @@
 		B7C15784DE6004A990C6CD006ADC6194 /* ASAbsoluteLayoutElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASAbsoluteLayoutElement.h; path = Source/Layout/ASAbsoluteLayoutElement.h; sourceTree = "<group>"; };
 		B85CB76A8F953F03991F73839601D988 /* ASTipNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASTipNode.h; path = Source/Private/ASTipNode.h; sourceTree = "<group>"; };
 		B8AB4C62A351683186DE542C6C8CB366 /* ASYogaUtilities.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASYogaUtilities.mm; path = Source/Layout/ASYogaUtilities.mm; sourceTree = "<group>"; };
+		B930CB39445E600F6058B2AC91D8D2B7 /* Pods-TextureBridging-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TextureBridging-dummy.m"; sourceTree = "<group>"; };
 		B943FEC65C85A5F5736083CDDD32FFFF /* ASCellNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASCellNode.h; path = Source/ASCellNode.h; sourceTree = "<group>"; };
 		B9DE09C0E4A25EEC5AB160CD7E886B81 /* TextureSwiftSupport.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TextureSwiftSupport.debug.xcconfig; sourceTree = "<group>"; };
 		BA851CB86C8993F1BC153F0D49C175E0 /* ASStackLayoutSpecUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASStackLayoutSpecUtilities.h; path = Source/Private/Layout/ASStackLayoutSpecUtilities.h; sourceTree = "<group>"; };
@@ -964,7 +961,6 @@
 		C064F528E5EB91006F2D9C7CF2EEE2BD /* StackCellType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StackCellType.swift; path = StackScrollView/StackCellType.swift; sourceTree = "<group>"; };
 		C0A1A4A7DB8D6685C8CD8D21AF520C25 /* TypedTextAttributes.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TypedTextAttributes.modulemap; sourceTree = "<group>"; };
 		C0C432E89E3F5D8DF7772B8D39E98768 /* _ASCollectionReusableView.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = _ASCollectionReusableView.mm; path = Source/Details/_ASCollectionReusableView.mm; sourceTree = "<group>"; };
-		C159A67C1D4B52A0AE2FF86C481EC57B /* Pods-TextureBridgingDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TextureBridgingDemo-acknowledgements.plist"; sourceTree = "<group>"; };
 		C17FE0FD73DBD1D33302B6668EA78911 /* AsyncDisplayKit+IGListKitMethods.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = "AsyncDisplayKit+IGListKitMethods.mm"; path = "Source/AsyncDisplayKit+IGListKitMethods.mm"; sourceTree = "<group>"; };
 		C2AC7AD9F727CB863740D9983BAEA1D8 /* ASRangeController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASRangeController.h; path = Source/Details/ASRangeController.h; sourceTree = "<group>"; };
 		C3B7CCA79E8B44C2F499AAC19B37AC79 /* TextureSwiftSupport-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TextureSwiftSupport-prefix.pch"; sourceTree = "<group>"; };
@@ -983,6 +979,7 @@
 		CEC8010005E2CDC2A39373415AFFC35D /* TypedTextAttributes-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TypedTextAttributes-Info.plist"; sourceTree = "<group>"; };
 		CF19A4017938B7DD192BC4E0E7209B1C /* ASDisplayNodeExtras.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDisplayNodeExtras.h; path = Source/ASDisplayNodeExtras.h; sourceTree = "<group>"; };
 		CF586E2C866313F0855B4E71621DA860 /* ASDisplayNode+Beta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ASDisplayNode+Beta.h"; path = "Source/ASDisplayNode+Beta.h"; sourceTree = "<group>"; };
+		CF75678CC0FAC48827FE96E2EC4B93A2 /* Pods-TextureBridging-TextureBridgingDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TextureBridging-TextureBridgingDemo.release.xcconfig"; sourceTree = "<group>"; };
 		CFA0E2A5223A6C98DDE849E8914998C0 /* ASCollectionViewLayoutFacilitatorProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASCollectionViewLayoutFacilitatorProtocol.h; path = Source/ASCollectionViewLayoutFacilitatorProtocol.h; sourceTree = "<group>"; };
 		D012B313F2EB15C297965B3777388F22 /* ASHighlightOverlayLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASHighlightOverlayLayer.h; path = Source/Details/ASHighlightOverlayLayer.h; sourceTree = "<group>"; };
 		D030CC6830F040DAC5A352FDE95AB14E /* ASCollectionGalleryLayoutDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASCollectionGalleryLayoutDelegate.h; path = Source/Details/ASCollectionGalleryLayoutDelegate.h; sourceTree = "<group>"; };
@@ -1011,6 +1008,7 @@
 		D9D25BE35658BF9F18E2474DA190D3FD /* StackScrollView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "StackScrollView-dummy.m"; sourceTree = "<group>"; };
 		DA6255BAAAB7502A9769FDBA04B4E432 /* TypedTextAttributes-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TypedTextAttributes-prefix.pch"; sourceTree = "<group>"; };
 		DAA5FCEDFBD3D545814DBD11CC9FFF2C /* ASDisplayNode+AsyncDisplay.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = "ASDisplayNode+AsyncDisplay.mm"; path = "Source/Private/ASDisplayNode+AsyncDisplay.mm"; sourceTree = "<group>"; };
+		DB0146CDE0A98E7F006BC3A429AF86C0 /* Pods-TextureBridging-TextureBridgingDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TextureBridging-TextureBridgingDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		DCDE6F1D651CBF91DEB2EC192B6F5E94 /* ASNodeController+Beta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ASNodeController+Beta.h"; path = "Source/ASNodeController+Beta.h"; sourceTree = "<group>"; };
 		DCEABB17DB85F302E3E6E39FBE2C8E3C /* ASDisplayNode+UIViewBridge.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = "ASDisplayNode+UIViewBridge.mm"; path = "Source/Private/ASDisplayNode+UIViewBridge.mm"; sourceTree = "<group>"; };
 		DD6F6E228AFA191055FB3AD6F896BF57 /* ASWeakSet.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASWeakSet.mm; path = Source/Details/ASWeakSet.mm; sourceTree = "<group>"; };
@@ -1032,9 +1030,9 @@
 		E3A2CB6AC5F27E7E91D34927DD3558A0 /* ASTableView.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASTableView.mm; path = Source/ASTableView.mm; sourceTree = "<group>"; };
 		E4083C0BA2ED9D9F6773D58009D87934 /* ASTextRunDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASTextRunDelegate.h; path = Source/Private/TextExperiment/String/ASTextRunDelegate.h; sourceTree = "<group>"; };
 		E41C83FB43A78799B2EEEB6E9B894C70 /* UICollectionViewLayout+ASConvenience.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UICollectionViewLayout+ASConvenience.h"; path = "Source/Details/UICollectionViewLayout+ASConvenience.h"; sourceTree = "<group>"; };
+		E457D8A99CED68A6C34D360F3469AD31 /* Pods-TextureBridging-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TextureBridging-umbrella.h"; sourceTree = "<group>"; };
 		E5DE1415D355153EFE20679B96FA4E16 /* TextureSwiftSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TextureSwiftSupport.h; path = TextureSwiftSupport/TextureSwiftSupport.h; sourceTree = "<group>"; };
 		E5ECDE311A9582C8D968F97B9BF1D0B8 /* NSIndexSet+ASHelpers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSIndexSet+ASHelpers.h"; path = "Source/Details/NSIndexSet+ASHelpers.h"; sourceTree = "<group>"; };
-		E5FC96E9203F6639F33FF261C5EF46C7 /* Pods-TextureBridgingDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TextureBridgingDemo-frameworks.sh"; sourceTree = "<group>"; };
 		E6DBFEF8E1A3719A02792C583B886F89 /* UIView+Easy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Easy.swift"; path = "EasyPeasy/UIView+Easy.swift"; sourceTree = "<group>"; };
 		E8743266C3962FAE5BA0F9B2A281CAFE /* ASBlockTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASBlockTypes.h; path = Source/ASBlockTypes.h; sourceTree = "<group>"; };
 		E8F1468FF76BE38BA8B5FA741D1EA095 /* ASTraitCollection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASTraitCollection.h; path = Source/Details/ASTraitCollection.h; sourceTree = "<group>"; };
@@ -1058,15 +1056,18 @@
 		F0DB17FFC9C16F3FCDD1F9352D35E40E /* ASTextKitFontSizeAdjuster.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASTextKitFontSizeAdjuster.mm; path = Source/TextKit/ASTextKitFontSizeAdjuster.mm; sourceTree = "<group>"; };
 		F11F239407921056067176D48E37456A /* ASMapNode.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASMapNode.mm; path = Source/ASMapNode.mm; sourceTree = "<group>"; };
 		F16E1694AF5EBC5A3622DD48E0F3B197 /* ASTextKitAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASTextKitAttributes.h; path = Source/TextKit/ASTextKitAttributes.h; sourceTree = "<group>"; };
+		F187B95FBE412D7D5D87F0FB73CBB92C /* Pods-TextureBridging-TextureBridgingDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TextureBridging-TextureBridgingDemo-umbrella.h"; sourceTree = "<group>"; };
 		F1A555BAA43598AC3A6981FFCAD70CA1 /* ASDisplayNode+Yoga.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = "ASDisplayNode+Yoga.mm"; path = "Source/ASDisplayNode+Yoga.mm"; sourceTree = "<group>"; };
 		F1D9138F2B5BDA13B77008B2DED49AF2 /* ASCollections.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASCollections.mm; path = Source/ASCollections.mm; sourceTree = "<group>"; };
 		F2630BCB22A5AB72B86B61718078A16C /* ASElementMap.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASElementMap.mm; path = Source/Details/ASElementMap.mm; sourceTree = "<group>"; };
 		F27AF7B71852658ED209CA0DA2053B19 /* ASVideoPlayerNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASVideoPlayerNode.h; path = Source/ASVideoPlayerNode.h; sourceTree = "<group>"; };
 		F27D761CBF6C36B4869F43A2E155076B /* SpecBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpecBuilder.swift; path = TextureSwiftSupport/SpecBuilder/SpecBuilder.swift; sourceTree = "<group>"; };
+		F2FC1B7AB726A4F794E1D0856E190C8B /* Pods-TextureBridging.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TextureBridging.modulemap"; sourceTree = "<group>"; };
 		F46831F4FCE3AB140F12577CE0C2AAB3 /* AsyncDisplayKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AsyncDisplayKit.framework; path = Texture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5191E5D35096FCA74A70BE2B2AE07F3 /* ASDisplayNodeLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDisplayNodeLayout.h; path = Source/Private/ASDisplayNodeLayout.h; sourceTree = "<group>"; };
 		F64AB6CB41451D254BC8515FC6C94097 /* ASCollectionFlowLayoutDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASCollectionFlowLayoutDelegate.h; path = Source/Details/ASCollectionFlowLayoutDelegate.h; sourceTree = "<group>"; };
 		F74289002758CAE776F86E145FBF6DCB /* ASDisplayNodeTipState.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASDisplayNodeTipState.mm; path = Source/Private/ASDisplayNodeTipState.mm; sourceTree = "<group>"; };
+		F7C8D56B7D627263F9F3FAA4D6B9175A /* Pods-TextureBridging-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TextureBridging-acknowledgements.plist"; sourceTree = "<group>"; };
 		F85C8089F76078BB565371EF42D3FC8C /* EasyPeasy-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "EasyPeasy-Info.plist"; sourceTree = "<group>"; };
 		F8B7C9BE98ED6D5FFF006BAA6BB4DC69 /* ASCornerLayoutSpec.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASCornerLayoutSpec.mm; path = Source/Layout/ASCornerLayoutSpec.mm; sourceTree = "<group>"; };
 		F912947ADBDA8226A60F802FC278C1FA /* ASWeakSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASWeakSet.h; path = Source/Details/ASWeakSet.h; sourceTree = "<group>"; };
@@ -1075,7 +1076,6 @@
 		FBB7EC10FEF630C4DD58E4DA833CE585 /* ASCollectionViewLayoutInspector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASCollectionViewLayoutInspector.h; path = Source/Details/ASCollectionViewLayoutInspector.h; sourceTree = "<group>"; };
 		FC5C0F8AA8F938D169DE49EF93A36816 /* EasyPeasy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EasyPeasy.release.xcconfig; sourceTree = "<group>"; };
 		FCBA05752644867CE74DFDDF9183DE5D /* ASTipsController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASTipsController.h; path = Source/Private/ASTipsController.h; sourceTree = "<group>"; };
-		FF00985067C965EE7E9E31415C4FDC50 /* Pods-TextureBridging.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TextureBridging.modulemap"; sourceTree = "<group>"; };
 		FF2A7895606EFC88BEA0AE95BEE7BE58 /* _ASAsyncTransactionContainer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _ASAsyncTransactionContainer.h; path = Source/Details/Transactions/_ASAsyncTransactionContainer.h; sourceTree = "<group>"; };
 		FF9A178B3602048B2F933A6D26C264EF /* ASDimension.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASDimension.mm; path = Source/Layout/ASDimension.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1087,6 +1087,14 @@
 			files = (
 				51EC09DB296122A252486B6B6DD6A6EC /* AsyncDisplayKit.framework in Frameworks */,
 				E30F37CCE8F60BFCAC2B0AA406536233 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1128E1309D48938CEC7BC53A2A9697A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BCEE6E71A621387ACDDAD5BF9859587 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1130,14 +1138,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D0C2EF8E47F5A3A258012066F8F7A884 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				43F8A4E868D4EA672ADC05EAC351B2D1 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -1150,34 +1150,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		0C6B32CFEE5C817D55C1941251A3F9E7 /* Pods-TextureBridging */ = {
+		19ADBE773731B365576680B68740E62A /* Pods-TextureBridging-TextureBridgingDemo */ = {
 			isa = PBXGroup;
 			children = (
-				FF00985067C965EE7E9E31415C4FDC50 /* Pods-TextureBridging.modulemap */,
-				69FAEA7E2CFCEE6F684DE062C2FAAFBA /* Pods-TextureBridging-acknowledgements.markdown */,
-				28AD7883C7E3FCCD7D772AC039989E38 /* Pods-TextureBridging-acknowledgements.plist */,
-				424A4E46B87750895F1082236C68D3CF /* Pods-TextureBridging-dummy.m */,
-				9842756C456F3DEB1229353E4B30E1C2 /* Pods-TextureBridging-Info.plist */,
-				8741FE75EEFEC8651159F800C89B02C4 /* Pods-TextureBridging-umbrella.h */,
-				644233E65177DFAA91C9FF5BCC42B55E /* Pods-TextureBridging.debug.xcconfig */,
-				4884DEFAA4C79A84964958F4CE32A68F /* Pods-TextureBridging.release.xcconfig */,
+				AE614269D8E2CE7D96136D8E1FEC9402 /* Pods-TextureBridging-TextureBridgingDemo.modulemap */,
+				9BCBA6BCE78D32453E1A7D22662C8408 /* Pods-TextureBridging-TextureBridgingDemo-acknowledgements.markdown */,
+				1C5C37520AB92B0C05F14DD816A61033 /* Pods-TextureBridging-TextureBridgingDemo-acknowledgements.plist */,
+				609520810C68D4BBD22928A4E6996F30 /* Pods-TextureBridging-TextureBridgingDemo-dummy.m */,
+				A4645306753902691BD6817E1E284AF8 /* Pods-TextureBridging-TextureBridgingDemo-frameworks.sh */,
+				2952BC7F31EE4D132463C38DCA759055 /* Pods-TextureBridging-TextureBridgingDemo-Info.plist */,
+				F187B95FBE412D7D5D87F0FB73CBB92C /* Pods-TextureBridging-TextureBridgingDemo-umbrella.h */,
+				DB0146CDE0A98E7F006BC3A429AF86C0 /* Pods-TextureBridging-TextureBridgingDemo.debug.xcconfig */,
+				CF75678CC0FAC48827FE96E2EC4B93A2 /* Pods-TextureBridging-TextureBridgingDemo.release.xcconfig */,
 			);
-			name = "Pods-TextureBridging";
-			path = "Target Support Files/Pods-TextureBridging";
-			sourceTree = "<group>";
-		};
-		1129F52B49331364287C0245DAF19A32 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				F46831F4FCE3AB140F12577CE0C2AAB3 /* AsyncDisplayKit.framework */,
-				8328E6FCAC1E4D4E635FEAE69D63A19E /* EasyPeasy.framework */,
-				4A661562BB22D2A65482684A119D3879 /* Pods_TextureBridging.framework */,
-				466BEED8F3D1106BB33418DE09395943 /* Pods_TextureBridgingDemo.framework */,
-				4FD02581F4E5647CA48D0DFB152C935E /* StackScrollView.framework */,
-				583A64E1E1C0056F000444007406C4EA /* TextureSwiftSupport.framework */,
-				62A1F1EDC3E7DC592F79D396A7AD546F /* TypedTextAttributes.framework */,
-			);
-			name = Products;
+			name = "Pods-TextureBridging-TextureBridgingDemo";
+			path = "Target Support Files/Pods-TextureBridging-TextureBridgingDemo";
 			sourceTree = "<group>";
 		};
 		1B1A6AF3F7D66E2F05B43697D5B037F3 /* Pods */ = {
@@ -1626,6 +1613,15 @@
 			path = "../Target Support Files/TypedTextAttributes";
 			sourceTree = "<group>";
 		};
+		61914D06C2F25B403DC7F19372A96827 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				92AF63032A21D7F45DC3E43868D5B9E8 /* Pods-TextureBridging */,
+				19ADBE773731B365576680B68740E62A /* Pods-TextureBridging-TextureBridgingDemo */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
 		6268D632CDC95C267F55D69E4DB83ACD /* Texture */ = {
 			isa = PBXGroup;
 			children = (
@@ -1691,6 +1687,22 @@
 			path = "../Target Support Files/TextureSwiftSupport";
 			sourceTree = "<group>";
 		};
+		92AF63032A21D7F45DC3E43868D5B9E8 /* Pods-TextureBridging */ = {
+			isa = PBXGroup;
+			children = (
+				F2FC1B7AB726A4F794E1D0856E190C8B /* Pods-TextureBridging.modulemap */,
+				01ABD8F7DCFAE6EB77CF197780F97733 /* Pods-TextureBridging-acknowledgements.markdown */,
+				F7C8D56B7D627263F9F3FAA4D6B9175A /* Pods-TextureBridging-acknowledgements.plist */,
+				B930CB39445E600F6058B2AC91D8D2B7 /* Pods-TextureBridging-dummy.m */,
+				847B90A2721AE6C900B7C77A9365AE65 /* Pods-TextureBridging-Info.plist */,
+				E457D8A99CED68A6C34D360F3469AD31 /* Pods-TextureBridging-umbrella.h */,
+				16FD7ADCBA12381B905CD745904F135F /* Pods-TextureBridging.debug.xcconfig */,
+				2BE8BD9C9669B6BA6C089906A1C29C4B /* Pods-TextureBridging.release.xcconfig */,
+			);
+			name = "Pods-TextureBridging";
+			path = "Target Support Files/Pods-TextureBridging";
+			sourceTree = "<group>";
+		};
 		A9149A0707660BB9EA1C49D28C59517C /* EasyPeasy */ = {
 			isa = PBXGroup;
 			children = (
@@ -1720,32 +1732,6 @@
 			);
 			name = EasyPeasy;
 			path = EasyPeasy;
-			sourceTree = "<group>";
-		};
-		AA0DAEB4EA5B9771F92C0A00E8D4EAB0 /* Pods-TextureBridgingDemo */ = {
-			isa = PBXGroup;
-			children = (
-				A94807C0676BD9CBA59210F7CCD36A6A /* Pods-TextureBridgingDemo.modulemap */,
-				6E047BD243E4B84D4B820AFF860A9EE7 /* Pods-TextureBridgingDemo-acknowledgements.markdown */,
-				C159A67C1D4B52A0AE2FF86C481EC57B /* Pods-TextureBridgingDemo-acknowledgements.plist */,
-				AC0D9EF42176D4C975D959148A2F4818 /* Pods-TextureBridgingDemo-dummy.m */,
-				E5FC96E9203F6639F33FF261C5EF46C7 /* Pods-TextureBridgingDemo-frameworks.sh */,
-				7E697D1606540441F04394721FE7823D /* Pods-TextureBridgingDemo-Info.plist */,
-				25A1BE010A6BE3C26BBECC8E9442650F /* Pods-TextureBridgingDemo-umbrella.h */,
-				8DA2C9A5E4D20AC5A7A75AB9F3DF2C91 /* Pods-TextureBridgingDemo.debug.xcconfig */,
-				4F1C3558B2F3436DD86E35B15079EBFF /* Pods-TextureBridgingDemo.release.xcconfig */,
-			);
-			name = "Pods-TextureBridgingDemo";
-			path = "Target Support Files/Pods-TextureBridgingDemo";
-			sourceTree = "<group>";
-		};
-		B479A9154CEAC451FA7E76C4AF41755D /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				0C6B32CFEE5C817D55C1941251A3F9E7 /* Pods-TextureBridging */,
-				AA0DAEB4EA5B9771F92C0A00E8D4EAB0 /* Pods-TextureBridgingDemo */,
-			);
-			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		B606F4604A75A3857265BD8BF3EE942A /* TextureSwiftSupport */ = {
@@ -1786,8 +1772,8 @@
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				05C271E351A92686A7975F347BCAE480 /* Frameworks */,
 				1B1A6AF3F7D66E2F05B43697D5B037F3 /* Pods */,
-				1129F52B49331364287C0245DAF19A32 /* Products */,
-				B479A9154CEAC451FA7E76C4AF41755D /* Targets Support Files */,
+				E8F7F1645C2D1A38D44E930D0C658CFB /* Products */,
+				61914D06C2F25B403DC7F19372A96827 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1804,6 +1790,20 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/EasyPeasy";
+			sourceTree = "<group>";
+		};
+		E8F7F1645C2D1A38D44E930D0C658CFB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F46831F4FCE3AB140F12577CE0C2AAB3 /* AsyncDisplayKit.framework */,
+				8328E6FCAC1E4D4E635FEAE69D63A19E /* EasyPeasy.framework */,
+				4A661562BB22D2A65482684A119D3879 /* Pods_TextureBridging.framework */,
+				22AEA0C7B56CD1E69CDB80A7DF1441FD /* Pods_TextureBridging_TextureBridgingDemo.framework */,
+				4FD02581F4E5647CA48D0DFB152C935E /* StackScrollView.framework */,
+				583A64E1E1C0056F000444007406C4EA /* TextureSwiftSupport.framework */,
+				62A1F1EDC3E7DC592F79D396A7AD546F /* TypedTextAttributes.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		EACDBBBBB59B277A7D1B76DED8AC191E /* iOS */ = {
@@ -1852,14 +1852,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		1C4F5EC1CEBD42CA60DD6E36CAAB64C5 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				13D089367FD38D6D8B2AC3F73ED5FE6E /* Pods-TextureBridgingDemo-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		35B18C32BAD9E19FF56DF391211764A2 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -2123,6 +2115,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5A9EEFDCF9A97BA9FDC18F7AB55BBFA7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4C2C68E49D02D307059CD314462BA9C /* Pods-TextureBridging-TextureBridgingDemo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9B99DBB7D78CE530A4AEF62271E5A121 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -2198,6 +2198,30 @@
 			productReference = 62A1F1EDC3E7DC592F79D396A7AD546F /* TypedTextAttributes.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		D6A54F8A98DCEF43569FB822C5D7929F /* Pods-TextureBridging-TextureBridgingDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44A61CF6E8319E1ED0AAE1503DE02A56 /* Build configuration list for PBXNativeTarget "Pods-TextureBridging-TextureBridgingDemo" */;
+			buildPhases = (
+				5A9EEFDCF9A97BA9FDC18F7AB55BBFA7 /* Headers */,
+				6A851FFD273BB28591989DD7A94AD901 /* Sources */,
+				1128E1309D48938CEC7BC53A2A9697A3 /* Frameworks */,
+				D94E3D02E6C37654A05E7A563E9386CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8594909EFDF97142F98B33B96B491DC2 /* PBXTargetDependency */,
+				BBA15D9D33068D62A6B661E1A49921F5 /* PBXTargetDependency */,
+				A02B611E0641F8AC6A31A1CA69D67797 /* PBXTargetDependency */,
+				B799BC0E046074E46E08159CD09BFDBA /* PBXTargetDependency */,
+				82A4F5ABCEED796316F80690ADED974D /* PBXTargetDependency */,
+				BE47744E8F1946E12B997EF420C79642 /* PBXTargetDependency */,
+			);
+			name = "Pods-TextureBridging-TextureBridgingDemo";
+			productName = "Pods-TextureBridging-TextureBridgingDemo";
+			productReference = 22AEA0C7B56CD1E69CDB80A7DF1441FD /* Pods_TextureBridging_TextureBridgingDemo.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		DB66E43BC980D741F3C7C5CF3ACEEFA4 /* Texture */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 26615F5808F43B8542C988CC67CF2422 /* Build configuration list for PBXNativeTarget "Texture" */;
@@ -2214,30 +2238,6 @@
 			name = Texture;
 			productName = Texture;
 			productReference = F46831F4FCE3AB140F12577CE0C2AAB3 /* AsyncDisplayKit.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		F1845E5C1715AE2B2DDE68C33F5B8139 /* Pods-TextureBridgingDemo */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2859379EB852DE87EBE8D600A1AC1C0B /* Build configuration list for PBXNativeTarget "Pods-TextureBridgingDemo" */;
-			buildPhases = (
-				1C4F5EC1CEBD42CA60DD6E36CAAB64C5 /* Headers */,
-				79848287F999EB3DD72564821096984A /* Sources */,
-				D0C2EF8E47F5A3A258012066F8F7A884 /* Frameworks */,
-				48C82C123F08DA9F25C63D3A5682F93B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F7843A5C5DAD0EA1AE21F98F7693B241 /* PBXTargetDependency */,
-				1B8CDCC04DD01BEA59D0D2676F75A431 /* PBXTargetDependency */,
-				4FD72936CA52BF724059E36E390D5375 /* PBXTargetDependency */,
-				91EF28F7C5EC51C9338CF878F8323210 /* PBXTargetDependency */,
-				F74D2C60145A0D3FA9466DC59D88A229 /* PBXTargetDependency */,
-				772CA4B24F4CDDE4A9E45D91D76F9176 /* PBXTargetDependency */,
-			);
-			name = "Pods-TextureBridgingDemo";
-			productName = "Pods-TextureBridgingDemo";
-			productReference = 466BEED8F3D1106BB33418DE09395943 /* Pods_TextureBridgingDemo.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		F1F480C2BF0E14AEA4FF0731FF84C43C /* Pods-TextureBridging */ = {
@@ -2295,13 +2295,13 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 1129F52B49331364287C0245DAF19A32 /* Products */;
+			productRefGroup = E8F7F1645C2D1A38D44E930D0C658CFB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				7AB385395597735698BB9CE5CEFC0EC3 /* EasyPeasy */,
 				F1F480C2BF0E14AEA4FF0731FF84C43C /* Pods-TextureBridging */,
-				F1845E5C1715AE2B2DDE68C33F5B8139 /* Pods-TextureBridgingDemo */,
+				D6A54F8A98DCEF43569FB822C5D7929F /* Pods-TextureBridging-TextureBridgingDemo */,
 				DD0B0FC4388FC5A75BAC950EECAB2864 /* Reveal-SDK */,
 				F6D6C0F3399C118535513D8BD4371A99 /* StackScrollView */,
 				DB66E43BC980D741F3C7C5CF3ACEEFA4 /* Texture */,
@@ -2312,13 +2312,6 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		48C82C123F08DA9F25C63D3A5682F93B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		9FCB4BA31AE710C9FF3FADA6B82D5069 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2334,6 +2327,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		D621379AAD820F7AE9E8EADAAD0778A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D94E3D02E6C37654A05E7A563E9386CB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -2563,11 +2563,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		79848287F999EB3DD72564821096984A /* Sources */ = {
+		6A851FFD273BB28591989DD7A94AD901 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF1897C89266526C7EF2F608209DBF89 /* Pods-TextureBridgingDemo-dummy.m in Sources */,
+				45B2E3E7F14F2FFDBF9920B7D8F047FD /* Pods-TextureBridging-TextureBridgingDemo-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2646,35 +2646,47 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1B8CDCC04DD01BEA59D0D2676F75A431 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Reveal-SDK";
-			target = DD0B0FC4388FC5A75BAC950EECAB2864 /* Reveal-SDK */;
-			targetProxy = 47A6BF10EC4B1791293C14D2AFDA6691 /* PBXContainerItemProxy */;
-		};
-		4FD72936CA52BF724059E36E390D5375 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = StackScrollView;
-			target = F6D6C0F3399C118535513D8BD4371A99 /* StackScrollView */;
-			targetProxy = 98DEF93BE71FF970D96CE9CCCD64802D /* PBXContainerItemProxy */;
-		};
-		772CA4B24F4CDDE4A9E45D91D76F9176 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = TypedTextAttributes;
-			target = B2E70E01F503FF73C300641039658C86 /* TypedTextAttributes */;
-			targetProxy = 08A74A50D93C0EB8CA2EA020BF6D2787 /* PBXContainerItemProxy */;
-		};
 		7742ED48472FD37C87E1C9F2DA95FADB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Texture;
 			target = DB66E43BC980D741F3C7C5CF3ACEEFA4 /* Texture */;
 			targetProxy = D6A7CBF5E3153C6CC30E63FAB207E138 /* PBXContainerItemProxy */;
 		};
-		91EF28F7C5EC51C9338CF878F8323210 /* PBXTargetDependency */ = {
+		82A4F5ABCEED796316F80690ADED974D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TextureSwiftSupport;
+			target = 6BA0431BA2A336C411236968904E1386 /* TextureSwiftSupport */;
+			targetProxy = 47B98033205098F53A382EB3DBB85ED0 /* PBXContainerItemProxy */;
+		};
+		8594909EFDF97142F98B33B96B491DC2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = EasyPeasy;
+			target = 7AB385395597735698BB9CE5CEFC0EC3 /* EasyPeasy */;
+			targetProxy = 3F83FBB8E629EF2B84E8179D5E9A6A5B /* PBXContainerItemProxy */;
+		};
+		A02B611E0641F8AC6A31A1CA69D67797 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = StackScrollView;
+			target = F6D6C0F3399C118535513D8BD4371A99 /* StackScrollView */;
+			targetProxy = B80331DD94E6E94F8C11B211EC94288F /* PBXContainerItemProxy */;
+		};
+		B799BC0E046074E46E08159CD09BFDBA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Texture;
 			target = DB66E43BC980D741F3C7C5CF3ACEEFA4 /* Texture */;
-			targetProxy = 81BB3D44C49F1A6298ADB16AEB51F5E2 /* PBXContainerItemProxy */;
+			targetProxy = F6B89A89DE67D254CA0066D606B52889 /* PBXContainerItemProxy */;
+		};
+		BBA15D9D33068D62A6B661E1A49921F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Reveal-SDK";
+			target = DD0B0FC4388FC5A75BAC950EECAB2864 /* Reveal-SDK */;
+			targetProxy = 119E340AF38C36A5B21759D316319D59 /* PBXContainerItemProxy */;
+		};
+		BE47744E8F1946E12B997EF420C79642 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TypedTextAttributes;
+			target = B2E70E01F503FF73C300641039658C86 /* TypedTextAttributes */;
+			targetProxy = E67752D273B609895B3EF6C4994503E8 /* PBXContainerItemProxy */;
 		};
 		D34C485EFF02194A0CF76F90707D436D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -2682,59 +2694,9 @@
 			target = DB66E43BC980D741F3C7C5CF3ACEEFA4 /* Texture */;
 			targetProxy = 8BB6F8B4E7D60399F3F327DAC59D1BBE /* PBXContainerItemProxy */;
 		};
-		F74D2C60145A0D3FA9466DC59D88A229 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = TextureSwiftSupport;
-			target = 6BA0431BA2A336C411236968904E1386 /* TextureSwiftSupport */;
-			targetProxy = 5080939F96F4224EFC83228AE5269B1A /* PBXContainerItemProxy */;
-		};
-		F7843A5C5DAD0EA1AE21F98F7693B241 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = EasyPeasy;
-			target = 7AB385395597735698BB9CE5CEFC0EC3 /* EasyPeasy */;
-			targetProxy = 7BF4246EA3043A965FFB1FFFE59E76F3 /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0F821ADCA77B9AD41FFE9DE9698A54B0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8DA2C9A5E4D20AC5A7A75AB9F3DF2C91 /* Pods-TextureBridgingDemo.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-TextureBridgingDemo/Pods-TextureBridgingDemo-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TextureBridgingDemo/Pods-TextureBridgingDemo.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		196DFA3E4A09A28224918543529A1885 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2872,7 +2834,7 @@
 		};
 		6893CBB4290976DC237CCE061FA05808 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4884DEFAA4C79A84964958F4CE32A68F /* Pods-TextureBridging.release.xcconfig */;
+			baseConfigurationReference = 2BE8BD9C9669B6BA6C089906A1C29C4B /* Pods-TextureBridging.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -2964,7 +2926,7 @@
 		};
 		849EA902438B29D948D9177395314B66 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 644233E65177DFAA91C9FF5BCC42B55E /* Pods-TextureBridging.debug.xcconfig */;
+			baseConfigurationReference = 16FD7ADCBA12381B905CD745904F135F /* Pods-TextureBridging.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -3106,45 +3068,6 @@
 			};
 			name = Debug;
 		};
-		9D5B568DCEC0258EDB399E846CD53F0B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4F1C3558B2F3436DD86E35B15079EBFF /* Pods-TextureBridgingDemo.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-TextureBridgingDemo/Pods-TextureBridgingDemo-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TextureBridgingDemo/Pods-TextureBridgingDemo.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		A20793482C6E54422ED1AF9896CCE64F /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AA652F013F345BD25DDB3B6334D158B7 /* Reveal-SDK.release.xcconfig */;
@@ -3258,6 +3181,45 @@
 			};
 			name = Release;
 		};
+		BD842EF4E33A01C6AB60D87C0B45E332 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF75678CC0FAC48827FE96E2EC4B93A2 /* Pods-TextureBridging-TextureBridgingDemo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TextureBridging-TextureBridgingDemo/Pods-TextureBridging-TextureBridgingDemo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TextureBridging-TextureBridgingDemo/Pods-TextureBridging-TextureBridgingDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		C165DC16B9C427A5F3C25A6C3B6BD128 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 453ED597972D310CD51C4B5F57555261 /* TypedTextAttributes.release.xcconfig */;
@@ -3365,6 +3327,44 @@
 			};
 			name = Debug;
 		};
+		F419492FE8DA739B4CA7272968172560 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB0146CDE0A98E7F006BC3A429AF86C0 /* Pods-TextureBridging-TextureBridgingDemo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TextureBridging-TextureBridgingDemo/Pods-TextureBridging-TextureBridgingDemo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TextureBridging-TextureBridgingDemo/Pods-TextureBridging-TextureBridgingDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -3413,11 +3413,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2859379EB852DE87EBE8D600A1AC1C0B /* Build configuration list for PBXNativeTarget "Pods-TextureBridgingDemo" */ = {
+		44A61CF6E8319E1ED0AAE1503DE02A56 /* Build configuration list for PBXNativeTarget "Pods-TextureBridging-TextureBridgingDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0F821ADCA77B9AD41FFE9DE9698A54B0 /* Debug */,
-				9D5B568DCEC0258EDB399E846CD53F0B /* Release */,
+				F419492FE8DA739B4CA7272968172560 /* Debug */,
+				BD842EF4E33A01C6AB60D87C0B45E332 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

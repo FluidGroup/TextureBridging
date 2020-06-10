@@ -27,7 +27,50 @@ final class DemoStackScrollViewController: UIViewController {
   }
 }
 
-public class PaddingView<Body: UIView>: UIView {
+public final class PaddingView<Body: UIView>: UIView {
+  // MARK: Public
+  public let body: Body
+  public convenience init(padding: UIEdgeInsets, bodyView: Body) {
+    self.init(
+      padding: (
+        top: Constant(value: padding.top, relation: .equal, multiplier: 1),
+        left: Constant(value: padding.left, relation: .equal, multiplier: 1),
+        bottom: Constant(value: padding.bottom, relation: .equal, multiplier: 1),
+        right: Constant(value: padding.right, relation: .equal, multiplier: 1)
+      ), bodyView: bodyView
+    )
+  }
+  public init(padding: (top: Constant, left: Constant, bottom: Constant, right: Constant), bodyView: Body) {
+    self.body = bodyView
+    super.init(frame: .zero)
+    self.addSubview(bodyView)
+    bodyView.easy.layout(
+      Center().with(.low)
+    )
+    let paddingTop = padding.top
+    bodyView.easy.layout(
+      Top(paddingTop).with(paddingTop.relation == .equal ? .required : .high)
+    )
+    let paddingLeft = padding.left
+    bodyView.easy.layout(
+      Left(paddingLeft).with(paddingLeft.relation == .equal ? .required : .high)
+    )
+    let paddingBottom = padding.bottom
+    bodyView.easy.layout(
+      Bottom(paddingBottom).with(paddingBottom.relation == .equal ? .required : .high)
+    )
+    let paddingRight = padding.right
+    bodyView.easy.layout(
+      Right(paddingRight).with(paddingRight.relation == .equal ? .required : .high)
+    )
+  }
+
+  required init?(coder: NSCoder) {
+    fatalError("init(coder:) has not been implemented")
+  }
+}
+
+public class PaddingView2<Body: UIView>: UIView {
 
   public let body: Body
 
