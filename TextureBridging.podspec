@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
     s.name         = "TextureBridging"
-    s.version      = "1.3.0"
+    s.version      = "2.0.0"
     s.summary      = "Allows bringing ASDisplayNode into the world of AutoLayout."
   
     s.description  = <<-DESC
@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   
     s.frameworks  = "UIKit", "AsyncDisplayKit"
     s.requires_arc = true
-    s.dependency "Texture/Core", "~> 2.8.1"
+    s.dependency "Texture/Core", "~> 3"
   
   end
   
