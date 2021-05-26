@@ -10,7 +10,6 @@
 #endif
 #endif
 
-#import "TextureSwiftSupport.h"
 
 FOUNDATION_EXPORT double TextureSwiftSupportVersionNumber;
 FOUNDATION_EXPORT const unsigned char TextureSwiftSupportVersionString[];
