@@ -24,110 +24,142 @@
 import UIKit
 import AsyncDisplayKit
 
-///
-open class NodeView<D: ASDisplayNode>: UILabel /* To use `textRect` method */ {
+open class NodeView<D: ASDisplayNode>: UIView {
+
+  public var node: D {
+    internalView.node
+  }
+
+  private let internalView: _InternalNodeView<D>
+
+  public init(node: D, frame: CGRect = .zero) {
+
+    let internalView = _InternalNodeView(node: node, frame: frame)
+    self.internalView = internalView
+
+    super.init(frame: frame)
+
+    addSubview(internalView)
+    internalView.translatesAutoresizingMaskIntoConstraints = false
+    NSLayoutConstraint.activate([
+      internalView.leftAnchor.constraint(equalTo: leftAnchor),
+      internalView.rightAnchor.constraint(equalTo: rightAnchor),
+      internalView.topAnchor.constraint(equalTo: topAnchor),
+      internalView.bottomAnchor.constraint(equalTo: bottomAnchor),
+    ])
+
+  }
+
+  @available(*, unavailable)
+  public required init?(coder: NSCoder) {
+    fatalError("init(coder:) has not been implemented")
+  }
+
+}
+
+private final class _InternalNodeView<D: ASDisplayNode>: UILabel /* To use `textRect` method */ {
 
   // MARK: - Unavailable
 
   @available(*, unavailable)
-  override open var text: String? {
+  override var text: String? {
     didSet {}
   }
 
   @available(*, unavailable)
-  override open var font: UIFont! {
+  override var font: UIFont! {
     didSet {}
   }
 
   @available(*, unavailable)
-  override open var textColor: UIColor! {
+  override var textColor: UIColor! {
     didSet {}
   }
 
   @available(*, unavailable)
-  override open var shadowColor: UIColor? {
+  override var shadowColor: UIColor? {
     didSet {}
   }
 
   @available(*, unavailable)
-  override open var shadowOffset: CGSize {
+  override var shadowOffset: CGSize {
     didSet {}
   }
 
   @available(*, unavailable)
-  override open var textAlignment: NSTextAlignment {
+  override var textAlignment: NSTextAlignment {
     didSet {}
   }
 
   @available(*, unavailable)
-  override open var lineBreakMode: NSLineBreakMode {
+  override var lineBreakMode: NSLineBreakMode {
     didSet {}
   }
 
   @available(*, unavailable)
-  open override var attributedText: NSAttributedString? {
+  override var attributedText: NSAttributedString? {
     didSet {}
   }
 
   @available(*, unavailable)
-  open override var highlightedTextColor: UIColor? {
+  override var highlightedTextColor: UIColor? {
     didSet {}
   }
 
   @available(*, unavailable)
-  open override var isHighlighted: Bool {
+  override var isHighlighted: Bool {
     didSet {}
   }
 
   @available(*, unavailable)
-  open override var isEnabled: Bool {
+  override var isEnabled: Bool {
     didSet {}
   }
 
   @available(*, unavailable)
-  open override var numberOfLines: Int {
+  override var numberOfLines: Int {
     didSet {}
   }
 
   @available(*, unavailable)
-  open override var adjustsFontSizeToFitWidth: Bool {
+  override var adjustsFontSizeToFitWidth: Bool {
     didSet {}
   }
 
   @available(*, unavailable)
-  open override var baselineAdjustment: UIBaselineAdjustment {
+  override var baselineAdjustment: UIBaselineAdjustment {
     didSet {}
   }
 
   @available(*, unavailable)
-  open override var minimumScaleFactor: CGFloat {
+  override var minimumScaleFactor: CGFloat {
     didSet {}
   }
 
   @available(*, unavailable)
-  open override var allowsDefaultTighteningForTruncation: Bool {
+  override var allowsDefaultTighteningForTruncation: Bool {
     didSet {}
   }
 
   @available(*, unavailable)
-  open override func drawText(in rect: CGRect) {
+  override func drawText(in rect: CGRect) {
     super.drawText(in: rect)
   }
 
   @available(*, unavailable)
-  open override var preferredMaxLayoutWidth: CGFloat {
+  override var preferredMaxLayoutWidth: CGFloat {
     didSet {}
   }
 
   // MARK: - Properties
 
-  public let node: D
+  let node: D
   private let wrapper: WrapperNode
   private let delegateProxy = __InterfaceStateDelegateProxy()
 
   // MARK: - Initializers
 
-  public init(node: D, frame: CGRect = .zero) {
+  init(node: D, frame: CGRect = .zero) {
 
     self.node = node
     self.wrapper = .init(wrapped: node)
@@ -148,7 +180,7 @@ open class NodeView<D: ASDisplayNode>: UILabel /* To use `textRect` method */ {
   }
 
   @available(*, unavailable)
-  public required init?(coder aDecoder: NSCoder) {
+  required init?(coder aDecoder: NSCoder) {
     fatalError("init(coder:) has not been implemented")
   }
 
@@ -156,7 +188,7 @@ open class NodeView<D: ASDisplayNode>: UILabel /* To use `textRect` method */ {
     node.remove(delegateProxy)
   }
 
-  open override func textRect(forBounds bounds: CGRect, limitedToNumberOfLines numberOfLines: Int) -> CGRect {
+  override func textRect(forBounds bounds: CGRect, limitedToNumberOfLines numberOfLines: Int) -> CGRect {
 
     let validate: (_ value: CGFloat, _ fallback: CGFloat) -> CGFloat = { value, fallback in
       // To guard crash inside Texture
@@ -177,7 +209,7 @@ open class NodeView<D: ASDisplayNode>: UILabel /* To use `textRect` method */ {
 
   // MARK: - Functions
 
-  open override func layoutSubviews() {
+  override func layoutSubviews() {
 
     super.layoutSubviews()
 
