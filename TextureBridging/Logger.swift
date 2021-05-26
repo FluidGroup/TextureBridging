@@ -11,8 +11,8 @@ import Foundation
 enum Log {
   
   static func debug(_ items: Any...) {
-    #if TextureBridging_DEBUG
-    print(items)
+    #if DEBUG
+    print("TextureBirding::", items)
     #endif
   }
 }

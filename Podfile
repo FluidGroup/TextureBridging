@@ -5,11 +5,14 @@ target 'TextureBridging' do
   use_frameworks!
 
   pod 'Texture/Core'
+
+  target 'TextureBridgingDemo' do
+    use_frameworks!
+    pod 'EasyPeasy'
+    pod 'TypedTextAttributes'
+    pod 'StackScrollView'
+    pod 'TextureSwiftSupport'
+    pod 'Reveal-SDK'
+  end
 end
 
-target 'TextureBridgingDemo' do
-  use_frameworks!
-  pod 'Texture/Core'
-  pod 'EasyPeasy'
-  pod 'TypedTextAttributes'
-end
