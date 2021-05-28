@@ -45,7 +45,5 @@ final class DemoImageViewController: UIViewController {
     imageView.node.setNeedsLayout()
     imageView.node.layoutIfNeeded()
     imageView.invalidateIntrinsicContentSize()
-    imageView.node.invalidateCalculatedLayout()
-    print(imageView.node.calculateSizeThatFits(ASSizeRangeUnconstrained.max))
   }
 }

@@ -55,6 +55,11 @@ open class NodeView<D: ASDisplayNode>: UIView {
     fatalError("init(coder:) has not been implemented")
   }
 
+  open override func invalidateIntrinsicContentSize() {
+    internalView.invalidateIntrinsicContentSize()
+    super.invalidateIntrinsicContentSize()
+  }
+
 }
 
 private final class _InternalNodeView<D: ASDisplayNode>: UILabel /* To use `textRect` method */ {
@@ -166,7 +171,7 @@ private final class _InternalNodeView<D: ASDisplayNode>: UILabel /* To use `text
 
     super.init(frame: frame)
 
-    // To call `textRect(forBounds bounds: CGRect, limitedToNumberOfLines numberOfLines: Int)`
+    /// To call `textRect(forBounds bounds: CGRect, limitedToNumberOfLines numberOfLines: Int)`
     super.numberOfLines = 0
     isUserInteractionEnabled = true
 
@@ -201,10 +206,11 @@ private final class _InternalNodeView<D: ASDisplayNode>: UILabel /* To use `text
     var range = ASSizeRangeUnconstrained
 
     range.max.width = validate(bounds.width, 10000)
-
-    let r = wrapper.calculateLayoutThatFits(range)
-    Log.debug(bounds, r)
-    return CGRect(origin: .zero, size: r.size)
+    let calculatedlayout = wrapper.calculateLayoutThatFits(range)
+//    let calculatedSize = wrapper.calculateSizeThatFits(range.max)
+    Log.debug(.generic, "[CalculateLayoutThatFits] range: \(range), layout: \(calculatedlayout.size) node: \(node)")
+//    Log.debug(.generic, "[CalculateSizeThatFits] size: \(range.max), layout: \(calculatedSize) node: \(node)")
+    return CGRect(origin: .zero, size: calculatedlayout.size)
   }
 
   // MARK: - Functions
@@ -230,6 +236,7 @@ private final class WrapperNode: ASDisplayNode {
   override func layoutSpecThatFits(_ constrainedSize: ASSizeRange) -> ASLayoutSpec {
     ASWrapperLayoutSpec(layoutElement: wrapped)
   }
+
 }
 
 private final class __InterfaceStateDelegateProxy: NSObject, ASInterfaceStateDelegate {
