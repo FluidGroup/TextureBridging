@@ -27,6 +27,9 @@ import Foundation
  According to that, animations are also supported.
  */
 open class InteractiveNode<D: ASDisplayNode>: NamedDisplayControlNodeBase {
+
+  public typealias BodyNode = D
+  
   public struct Handlers {
     public var onTap: () -> Void = {}
     public var onLongPress: (CGPoint) -> Void = { _ in }
@@ -47,14 +50,18 @@ open class InteractiveNode<D: ASDisplayNode>: NamedDisplayControlNodeBase {
   private let onChangedIsHighlighted: HighlightAnimationDescriptor
 
   private let useLongPressGesture: Bool
+  private let haptics: HapticsDescriptor?
 
   // MARK: - Initializers
 
   public init(
     animation: HighlightAnimationDescriptor,
+    haptics: HapticsDescriptor? = nil,
     useLongPressGesture: Bool = false,
     _ bodyNode: () -> D
   ) {
+
+    self.haptics = haptics
     self.useLongPressGesture = useLongPressGesture
 
     overlayNode = animation.overlayNode
@@ -91,6 +98,12 @@ open class InteractiveNode<D: ASDisplayNode>: NamedDisplayControlNodeBase {
       forControlEvents: .touchUpInside
     )
 
+    addTarget(
+      self,
+      action: #selector(_touchDownInside),
+      forControlEvents: .touchDown
+    )
+
     if useLongPressGesture {
       let longPressGesture = UILongPressGestureRecognizer(
         target: self,
@@ -117,13 +130,20 @@ open class InteractiveNode<D: ASDisplayNode>: NamedDisplayControlNodeBase {
     }
   }
 
-  @objc private func _touchUpInside(_ gesture: UITapGestureRecognizer) {
+  @objc private func _touchDownInside() {
+    haptics?.send(event: .onTouchDownInside)
+  }
+
+  @objc private func _touchUpInside() {
+    haptics?.send(event: .onTouchUpInside)
     handlers.onTap()
   }
 
   @objc private func _onLongPress(_ gesture: UILongPressGestureRecognizer) {
     guard case .began = gesture.state else { return }
     let point = gesture.location(in: gesture.view)
+
+    haptics?.send(event: .onLongPress)
     handlers.onLongPress(point)
   }
 

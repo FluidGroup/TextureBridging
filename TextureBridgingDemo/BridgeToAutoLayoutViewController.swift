@@ -8,45 +8,56 @@
 
 import UIKit
 
-import EasyPeasy
+import MondrianLayout
 import TextureBridging
 import AsyncDisplayKit
 import TypedTextAttributes
 
 final class BridgeToAutoLayoutViewController : UIViewController {
-  
-  private let changeTextButton = UIButton(type: .system)
+
   private let nodeView = NodeView(node: ComponentNode())
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
+
+    let changeTextButton = UIButton(type: .system)
     changeTextButton.setTitle("Change Text", for: .normal)
+
+    let refreshButton = UIButton(type: .system)
+    refreshButton.setTitle("Refresh", for: .normal)
     
     view.backgroundColor = .white
-    view.addSubview(changeTextButton)
-    view.addSubview(nodeView)
-    
-    changeTextButton.easy.layout([
-      CenterX(),
-      Bottom(32).to(view.safeAreaLayoutGuide, .bottom)
-      ])
-    
-    nodeView.easy.layout([
-      Top(32).to(view.safeAreaLayoutGuide, .top),
-      CenterX(),
-      Left(>=32),
-      Right(<=32),
-      Bottom(<=0).to(changeTextButton, .top),
-      ])
-    
+
+    view.mondrian.buildSubviews {
+      LayoutContainer(attachedSafeAreaEdges: .all) {
+        VStackBlock(alignment: .fill) {
+
+          nodeView
+            .viewBlock
+            .padding(.horizontal, 32)
+
+          StackingSpacer(minLength: 32)
+
+          changeTextButton
+          refreshButton
+        }
+      }
+    }
+
     changeTextButton.addTarget(self, action: #selector(didTap), for: .touchUpInside)
+    refreshButton.addTarget(self, action: #selector(refresh), for: .touchUpInside)
   }
   
   @objc
   private dynamic func didTap() {
     
     nodeView.node.set(text: Lorem.ipsum(Int(arc4random_uniform(500) + 10)))
+  }
+
+  @objc
+  private dynamic func refresh() {
+
+    nodeView.invalidateIntrinsicContentSize()
   }
 }
 
@@ -78,6 +89,7 @@ extension BridgeToAutoLayoutViewController {
           .font(UIFont.preferredFont(forTextStyle: .headline))
           .foregroundColor(UIColor(white: 0.1, alpha: 1))
       }
+
     }
   }
 }

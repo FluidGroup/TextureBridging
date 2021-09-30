@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		305C0A5D7FCBEFF2BE883ADA /* Pods_TextureBridging_TextureBridgingDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FE8AB8291F154B337451893 /* Pods_TextureBridging_TextureBridgingDemo.framework */; };
 		4B5E3513228BEF4700E6B966 /* NodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5E3512228BEF4700E6B966 /* NodeView.swift */; };
 		4B5E351B228BF3A000E6B966 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5E351A228BF3A000E6B966 /* AppDelegate.swift */; };
 		4B5E351D228BF3A000E6B966 /* BridgeToAutoLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5E351C228BF3A000E6B966 /* BridgeToAutoLayoutViewController.swift */; };
@@ -15,13 +14,13 @@
 		4B5E3522228BF3A100E6B966 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B5E3521228BF3A000E6B966 /* Assets.xcassets */; };
 		4B5E3525228BF3A100E6B966 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B5E3523228BF3A100E6B966 /* LaunchScreen.storyboard */; };
 		4B5E352C228BF51000E6B966 /* TextureBridging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BF2A956228A812100CB3870 /* TextureBridging.framework */; };
-		4B5E352D228BF51000E6B966 /* TextureBridging.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4BF2A956228A812100CB3870 /* TextureBridging.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4B5E3530228BF56A00E6B966 /* Lorem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5E352F228BF56A00E6B966 /* Lorem.swift */; };
 		4B5E3532228BF64500E6B966 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5E3531228BF64500E6B966 /* Logger.swift */; };
 		4B8AC2E4231CDFF1009AD236 /* DemoImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8AC2E3231CDFF1009AD236 /* DemoImageViewController.swift */; };
 		4B9861A9248F79DF000E44A5 /* DemoStackScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9861A8248F79DF000E44A5 /* DemoStackScrollViewController.swift */; };
 		4BF2A95B228A812100CB3870 /* TextureBridging.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BF2A959228A812100CB3870 /* TextureBridging.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		540E3A1FD657EA36432DB0F9 /* Pods_TextureBridging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5114A756114C2BACD7844ED0 /* Pods_TextureBridging.framework */; };
+		DF63EA3878093942152BA3EF /* Pods_TextureBridgingDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F3617D5955F17D059BD76D5 /* Pods_TextureBridgingDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,20 +32,6 @@
 			remoteInfo = TextureBridging;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		4B5E352E228BF51000E6B966 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				4B5E352D228BF51000E6B966 /* TextureBridging.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		148186B9622B02C43EAE77F2 /* Pods-TextureBridgingDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextureBridgingDemo.debug.xcconfig"; path = "Target Support Files/Pods-TextureBridgingDemo/Pods-TextureBridgingDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -70,7 +55,7 @@
 		5058C3E052FCC5C8E31D0EF5 /* Pods-TextureBridgingDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextureBridgingDemo.release.xcconfig"; path = "Target Support Files/Pods-TextureBridgingDemo/Pods-TextureBridgingDemo.release.xcconfig"; sourceTree = "<group>"; };
 		5114A756114C2BACD7844ED0 /* Pods_TextureBridging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TextureBridging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		78FEEF77EEF5235C1F0D5495 /* Pods-TextureBridging-TextureBridgingDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextureBridging-TextureBridgingDemo.debug.xcconfig"; path = "Target Support Files/Pods-TextureBridging-TextureBridgingDemo/Pods-TextureBridging-TextureBridgingDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		7FE8AB8291F154B337451893 /* Pods_TextureBridging_TextureBridgingDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TextureBridging_TextureBridgingDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F3617D5955F17D059BD76D5 /* Pods_TextureBridgingDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TextureBridgingDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D14E0EA5AE7325CB340C85E2 /* Pods-TextureBridging-TextureBridgingDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextureBridging-TextureBridgingDemo.release.xcconfig"; path = "Target Support Files/Pods-TextureBridging-TextureBridgingDemo/Pods-TextureBridging-TextureBridgingDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,7 +65,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B5E352C228BF51000E6B966 /* TextureBridging.framework in Frameworks */,
-				305C0A5D7FCBEFF2BE883ADA /* Pods_TextureBridging_TextureBridgingDemo.framework in Frameworks */,
+				DF63EA3878093942152BA3EF /* Pods_TextureBridgingDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,7 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				5114A756114C2BACD7844ED0 /* Pods_TextureBridging.framework */,
-				7FE8AB8291F154B337451893 /* Pods_TextureBridging_TextureBridgingDemo.framework */,
+				7F3617D5955F17D059BD76D5 /* Pods_TextureBridgingDemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -187,7 +172,6 @@
 				4B5E3515228BF3A000E6B966 /* Frameworks */,
 				4B5E3516228BF3A000E6B966 /* Resources */,
 				DBFCD8C27A3475422D76E183 /* [CP] Embed Pods Frameworks */,
-				4B5E352E228BF51000E6B966 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -292,7 +276,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TextureBridging-TextureBridgingDemo-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-TextureBridgingDemo-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -327,15 +311,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TextureBridging-TextureBridgingDemo/Pods-TextureBridging-TextureBridgingDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-TextureBridgingDemo/Pods-TextureBridgingDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TextureBridging-TextureBridgingDemo/Pods-TextureBridging-TextureBridgingDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-TextureBridgingDemo/Pods-TextureBridgingDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TextureBridging-TextureBridgingDemo/Pods-TextureBridging-TextureBridgingDemo-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TextureBridgingDemo/Pods-TextureBridgingDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -394,13 +378,13 @@
 /* Begin XCBuildConfiguration section */
 		4B5E3527228BF3A100E6B966 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 78FEEF77EEF5235C1F0D5495 /* Pods-TextureBridging-TextureBridgingDemo.debug.xcconfig */;
+			baseConfigurationReference = 148186B9622B02C43EAE77F2 /* Pods-TextureBridgingDemo.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TextureBridgingDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -414,13 +398,13 @@
 		};
 		4B5E3528228BF3A100E6B966 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D14E0EA5AE7325CB340C85E2 /* Pods-TextureBridging-TextureBridgingDemo.release.xcconfig */;
+			baseConfigurationReference = 5058C3E052FCC5C8E31D0EF5 /* Pods-TextureBridgingDemo.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TextureBridgingDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -577,6 +561,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = me.muukii.TextureBridging;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -604,6 +589,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = me.muukii.TextureBridging;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;

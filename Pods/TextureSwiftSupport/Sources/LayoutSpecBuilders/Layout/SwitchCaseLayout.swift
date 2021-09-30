@@ -139,6 +139,8 @@ public struct Switch: _ASLayoutElementType {
   
 }
 
+/// Case descriptor for Switch Control Flow.
+/// - SeeAlso: `Switch`
 public struct Case: _ASLayoutElementType {
 
   private let makeContent: () -> [ASLayoutElement]
@@ -165,6 +167,43 @@ public struct Case: _ASLayoutElementType {
     _CaseLayoutSpec(condition: condition, makeContent: makeContent)
   }
 }
+
+public struct ConditionInspector: _ASLayoutElementType {
+
+  private let displayName: String
+
+  private let onReceiveContext: (String, LayoutContext) -> Void
+
+  public init(
+    _ name: String? = nil,
+    _ file: StaticString = #file,
+    _ line: UInt = #line,
+    onReceiveContext: @escaping (String, LayoutContext) -> Void = { displayName, context in
+      print("[ConditionInspector] \(displayName), layoutCondition: \(context.debugDescription)")
+    }
+  ) {
+
+    if let name = name {
+      self.displayName = name
+    } else {
+      self.displayName = "\(file):\(line)"
+    }
+
+    self.onReceiveContext = onReceiveContext
+
+  }
+
+  public func tss_make() -> [ASLayoutElement] {
+    [_CaseLayoutSpec(condition: .init { [displayName] (context: LayoutContext) in
+      onReceiveContext(displayName, context)
+      return true
+    }, makeContent: {
+      [ASLayoutSpec()]
+    })]
+  }
+}
+
+// MARK: - Internal
 
 fileprivate let emptyLayout = ASLayoutSpec()
 
@@ -194,6 +233,7 @@ final class _CaseLayoutSpec: ASLayoutSpec {
 
     let context = LayoutContext(
       constraintSize: constrainedSize,
+      restrictedSize: size,
       parentSize: parentSize,
       trait: asyncTraitCollection()
     )
@@ -224,6 +264,7 @@ final class _SwitchLayoutSpec: ASLayoutSpec {
 
     let context = LayoutContext(
       constraintSize: constrainedSize,
+      restrictedSize: size,
       parentSize: parentSize,
       trait: asyncTraitCollection()
     )
@@ -236,6 +277,55 @@ final class _SwitchLayoutSpec: ASLayoutSpec {
 
     return emptyLayout.calculateLayoutThatFits(constrainedSize, restrictedTo: size, relativeToParentSize: parentSize)
 
+  }
+
+}
+
+/// Experimental
+public struct _ConditionReader<Content: _ASLayoutElementType>: _ASLayoutElementType {
+
+  private let content: (LayoutContext) -> Content
+
+  public init(@ASLayoutSpecBuilder content: @escaping (LayoutContext) -> Content) {
+    self.content = content
+  }
+
+  public func tss_make() -> [ASLayoutElement] {
+    [_ConditionalLayoutSpec(content: content)]
+  }
+
+}
+
+/// Experimental
+final class _ConditionalLayoutSpec<Content: _ASLayoutElementType>: ASLayoutSpec {
+
+  private let content: (LayoutContext) -> Content
+
+  init(@ASLayoutSpecBuilder content: @escaping (LayoutContext) -> Content) {
+    self.content = content
+    super.init()
+  }
+
+  override func calculateLayoutThatFits(
+    _ constrainedSize: ASSizeRange,
+    restrictedTo size: ASLayoutElementSize,
+    relativeToParentSize parentSize: CGSize
+  ) -> ASLayout {
+
+    let context = LayoutContext(
+      constraintSize: constrainedSize,
+      restrictedSize: size,
+      parentSize: parentSize,
+      trait: asyncTraitCollection()
+    )
+
+    let layoutSpec = LayoutSpec {
+      content(context)
+    }
+    child = layoutSpec
+    let layout = layoutSpec.calculateLayoutThatFits(constrainedSize, restrictedTo: size, relativeToParentSize: parentSize)
+
+    return layout
   }
 
 }
