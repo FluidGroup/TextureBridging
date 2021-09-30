@@ -27,19 +27,22 @@ final class DemoUnconstrainedViewController: UIViewController {
 
     view.backgroundColor = .white
 
-    view.addSubview(nodeView)
-    view.addSubview(changeTextButton)
+    view.mondrian.buildSubviews {
+      LayoutContainer(attachedSafeAreaEdges: .all) {
+        VStackBlock(alignment: .center) {
 
-    mondrianBatchLayout {
-      nodeView.mondrian.layout
-        .top(.to(view.safeAreaLayoutGuide))
-        .horizontal(.to(view.safeAreaLayoutGuide), 32)
+          nodeView
+            .viewBlock
+            .padding(.horizontal, 32)
 
-      changeTextButton.mondrian.layout
-        .bottom(.to(view.safeAreaLayoutGuide), -20)
-        .centerX(.toSuperview)
+          StackingSpacer(minLength: 32)
+
+          changeTextButton
+          refreshButton
+        }
+      }
     }
-    
+
     changeTextButton.addTarget(self, action: #selector(didTap), for: .touchUpInside)
     refreshButton.addTarget(self, action: #selector(refresh), for: .touchUpInside)
   }

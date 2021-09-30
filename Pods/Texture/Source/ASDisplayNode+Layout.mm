@@ -110,6 +110,8 @@ using AS::MutexLocker;
                           restrictedToSize:self.style.size
                       relativeToParentSize:parentSize];
     as_log_verbose(ASLayoutLog(), "Established pending layout for %@ in %s", self, sel_getName(_cmd));
+
+    NSLog(@"Creates node-layout %@, size: %@, min: %@, max: %@", self, NSStringFromCGSize(layout.size),  NSStringFromCGSize(constrainedSize.min), NSStringFromCGSize(constrainedSize.max));
     _pendingDisplayNodeLayout = ASDisplayNodeLayout(layout, constrainedSize, parentSize,version);
     ASDisplayNodeAssertNotNil(layout, @"-[ASDisplayNode layoutThatFits:parentSize:] newly calculated layout should not be nil! %@", self);
   }
