@@ -1,2 +1,12 @@
 ${PODS_ROOT}/Target Support Files/Pods-TextureBridgingDemo/Pods-TextureBridgingDemo-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Texture-iOS12.0/AsyncDisplayKit.framework
+${BUILT_PRODUCTS_DIR}/EasyPeasy/EasyPeasy.framework
+${BUILT_PRODUCTS_DIR}/MondrianLayout/MondrianLayout.framework
+${BUILT_PRODUCTS_DIR}/StackScrollView/StackScrollView.framework
+${BUILT_PRODUCTS_DIR}/StorybookKit/StorybookKit.framework
+${BUILT_PRODUCTS_DIR}/StorybookKitTextureSupport/StorybookKitTextureSupport.framework
+${BUILT_PRODUCTS_DIR}/StorybookUI/StorybookUI.framework
+${BUILT_PRODUCTS_DIR}/TextureBridging/TextureBridging.framework
+${BUILT_PRODUCTS_DIR}/TextureSwiftSupport/TextureSwiftSupport.framework
+${BUILT_PRODUCTS_DIR}/TypedTextAttributes/TypedTextAttributes.framework
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/Reveal-SDK/RevealServer.framework/RevealServer

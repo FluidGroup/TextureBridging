@@ -6,17 +6,16 @@
 //  Copyright © 2019 muukii. All rights reserved.
 //
 
-import UIKit
-
+import AsyncDisplayKit
 import MondrianLayout
 import TextureBridging
-import AsyncDisplayKit
 import TypedTextAttributes
+import UIKit
 
-final class BridgeToAutoLayoutViewController : UIViewController {
+final class BridgeToAutoLayoutViewController: UIViewController {
 
   private let nodeView = NodeView(node: ComponentNode())
-  
+
   override func viewDidLoad() {
     super.viewDidLoad()
 
@@ -25,7 +24,7 @@ final class BridgeToAutoLayoutViewController : UIViewController {
 
     let refreshButton = UIButton(type: .system)
     refreshButton.setTitle("Refresh", for: .normal)
-    
+
     view.backgroundColor = .white
 
     view.mondrian.buildSubviews {
@@ -47,10 +46,10 @@ final class BridgeToAutoLayoutViewController : UIViewController {
     changeTextButton.addTarget(self, action: #selector(didTap), for: .touchUpInside)
     refreshButton.addTarget(self, action: #selector(refresh), for: .touchUpInside)
   }
-  
+
   @objc
   private dynamic func didTap() {
-    
+
     nodeView.node.set(text: Lorem.ipsum(Int(arc4random_uniform(500) + 10)))
   }
 
@@ -61,35 +60,32 @@ final class BridgeToAutoLayoutViewController : UIViewController {
   }
 }
 
-extension BridgeToAutoLayoutViewController {
-  
-  private final class ComponentNode : ASDisplayNode {
-    
-    private let textNode = ASTextNode()
-    
-    override init() {
-      super.init()
-      
-      backgroundColor = UIColor(white: 0.8, alpha: 1)
-      automaticallyManagesSubnodes = true
-    }
-    
-    override func layoutSpecThatFits(_ constrainedSize: ASSizeRange) -> ASLayoutSpec {
-      
-      return ASInsetLayoutSpec(
-        insets: .zero,
-        child: textNode
-      )
-    }
-    
-    func set(text: String) {
-      
-      textNode.attributedText = text.attributed {
-        TextAttributes()
-          .font(UIFont.preferredFont(forTextStyle: .headline))
-          .foregroundColor(UIColor(white: 0.1, alpha: 1))
-      }
+final class ComponentNode: ASDisplayNode {
 
+  private let textNode = ASTextNode()
+
+  override init() {
+    super.init()
+
+    backgroundColor = UIColor(white: 0.8, alpha: 1)
+    automaticallyManagesSubnodes = true
+  }
+
+  override func layoutSpecThatFits(_ constrainedSize: ASSizeRange) -> ASLayoutSpec {
+
+    return ASInsetLayoutSpec(
+      insets: .zero,
+      child: textNode
+    )
+  }
+
+  func set(text: String) {
+
+    textNode.attributedText = text.attributed {
+      TextAttributes()
+        .font(UIFont.preferredFont(forTextStyle: .headline))
+        .foregroundColor(UIColor(white: 0.1, alpha: 1))
     }
+
   }
 }

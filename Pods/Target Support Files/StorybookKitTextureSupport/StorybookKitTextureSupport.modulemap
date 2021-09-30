@@ -1,0 +1,6 @@
+framework module StorybookKitTextureSupport {
+  umbrella header "StorybookKitTextureSupport-umbrella.h"
+
+  export *
+  module * { export * }
+}
