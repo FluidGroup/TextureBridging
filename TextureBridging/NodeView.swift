@@ -221,6 +221,15 @@ private final class _InternalNodeView<D: ASDisplayNode>: UILabel /* To use `text
       wrapper.frame = bounds
     }
   }
+
+  override func setNeedsLayout() {
+    super.setNeedsLayout()
+
+    wrapper.subnodes?.forEach {
+      $0.setNeedsLayout()
+    }
+    
+  }
 }
 
 private final class WrapperNode: ASDisplayNode {
