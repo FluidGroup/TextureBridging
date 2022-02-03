@@ -31,10 +31,23 @@ open class NodeView<D: ASDisplayNode>: UIView {
   }
 
   private let internalView: _InternalNodeView<D>
+  
+  /// Creates an instance
+  /// - Parameters:
+  ///   - node: a node that embedded
+  ///   - expandsWidth: Boolean value that indicates whether the node always expands to maximum width in bounding rect.
+  ///   - frame:
+  public init(
+    node: D,
+    expandsWidth: Bool = false,
+    frame: CGRect = .zero
+  ) {
 
-  public init(node: D, frame: CGRect = .zero) {
-
-    let internalView = _InternalNodeView(node: node, frame: frame)
+    let internalView = _InternalNodeView(
+      node: node,
+      expandsWidth: expandsWidth,
+      frame: frame
+    )
     self.internalView = internalView
 
     super.init(frame: frame)
@@ -161,13 +174,19 @@ private final class _InternalNodeView<D: ASDisplayNode>: UILabel /* To use `text
   let node: D
   private let wrapper: WrapperNode
   private let delegateProxy = __InterfaceStateDelegateProxy()
+  public let expandsWidth: Bool
 
   // MARK: - Initializers
 
-  init(node: D, frame: CGRect = .zero) {
-
+  init(
+    node: D,
+    expandsWidth: Bool,
+    frame: CGRect = .zero
+  ) {
+    
     self.node = node
     self.wrapper = .init(wrapped: node)
+    self.expandsWidth = expandsWidth
 
     super.init(frame: frame)
 
@@ -206,6 +225,11 @@ private final class _InternalNodeView<D: ASDisplayNode>: UILabel /* To use `text
     var range = ASSizeRangeUnconstrained
 
     range.max.width = validate(bounds.width, 10000)
+    
+    if expandsWidth {
+      range.min.width = validate(bounds.width, 0)
+    }
+    
     let calculatedlayout = wrapper.calculateLayoutThatFits(range)
 //    let calculatedSize = wrapper.calculateSizeThatFits(range.max)
     Log.debug(.generic, "[CalculateLayoutThatFits] range: \(range), layout: \(calculatedlayout.size) node: \(node)")
@@ -284,4 +308,5 @@ private final class __InterfaceStateDelegateProxy: NSObject, ASInterfaceStateDel
   }
 
 }
+
 
