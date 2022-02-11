@@ -1,6 +1,0 @@
-${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AsyncDisplayKit.framework
-${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EasyPeasy.framework
-${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/StackScrollView.framework
-${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TextureSwiftSupport.framework
-${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TypedTextAttributes.framework
-${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RevealServer.framework

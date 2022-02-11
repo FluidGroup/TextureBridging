@@ -231,9 +231,7 @@ private final class _InternalNodeView<D: ASDisplayNode>: UILabel /* To use `text
     }
     
     let calculatedlayout = wrapper.calculateLayoutThatFits(range)
-//    let calculatedSize = wrapper.calculateSizeThatFits(range.max)
     Log.debug(.generic, "[CalculateLayoutThatFits] range: \(range), layout: \(calculatedlayout.size) node: \(node)")
-//    Log.debug(.generic, "[CalculateSizeThatFits] size: \(range.max), layout: \(calculatedSize) node: \(node)")
     return CGRect(origin: .zero, size: calculatedlayout.size)
   }
 
@@ -243,7 +241,18 @@ private final class _InternalNodeView<D: ASDisplayNode>: UILabel /* To use `text
 
     super.layoutSubviews()
 
-    wrapper.frame = bounds
+    if wrapper.frame != bounds {
+      wrapper.frame = bounds
+    }
+  }
+
+  override func setNeedsLayout() {
+    super.setNeedsLayout()
+
+    wrapper.subnodes?.forEach {
+      $0.setNeedsLayout()
+    }
+    
   }
 }
 

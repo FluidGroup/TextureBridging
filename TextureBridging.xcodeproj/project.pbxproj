@@ -7,71 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		305C0A5D7FCBEFF2BE883ADA /* Pods_TextureBridging_TextureBridgingDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FE8AB8291F154B337451893 /* Pods_TextureBridging_TextureBridgingDemo.framework */; };
+		0F47706F40018E154CD434A7 /* Pods_TextureBridgingDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C5A079DEBB5ED5F4EF4A195 /* Pods_TextureBridgingDemo.framework */; };
+		309BA19E1CE98D0F9B248E1D /* Pods_TextureBridging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFCCE18870DC45A52683793 /* Pods_TextureBridging.framework */; };
 		4B5E3513228BEF4700E6B966 /* NodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5E3512228BEF4700E6B966 /* NodeView.swift */; };
 		4B5E351B228BF3A000E6B966 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5E351A228BF3A000E6B966 /* AppDelegate.swift */; };
 		4B5E351D228BF3A000E6B966 /* BridgeToAutoLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5E351C228BF3A000E6B966 /* BridgeToAutoLayoutViewController.swift */; };
-		4B5E3520228BF3A000E6B966 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B5E351E228BF3A000E6B966 /* Main.storyboard */; };
 		4B5E3522228BF3A100E6B966 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B5E3521228BF3A000E6B966 /* Assets.xcassets */; };
 		4B5E3525228BF3A100E6B966 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B5E3523228BF3A100E6B966 /* LaunchScreen.storyboard */; };
-		4B5E352C228BF51000E6B966 /* TextureBridging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BF2A956228A812100CB3870 /* TextureBridging.framework */; };
-		4B5E352D228BF51000E6B966 /* TextureBridging.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4BF2A956228A812100CB3870 /* TextureBridging.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4B5E3530228BF56A00E6B966 /* Lorem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5E352F228BF56A00E6B966 /* Lorem.swift */; };
 		4B5E3532228BF64500E6B966 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5E3531228BF64500E6B966 /* Logger.swift */; };
+		4B6442A12706002B00825887 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6442A02706002B00825887 /* Book.swift */; };
+		4B6442A32706004300825887 /* RootContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6442A22706004300825887 /* RootContainerViewController.swift */; };
+		4B6442A82706019700825887 /* DemoUnconstrainedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6442A72706019700825887 /* DemoUnconstrainedViewController.swift */; };
 		4B8AC2E4231CDFF1009AD236 /* DemoImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8AC2E3231CDFF1009AD236 /* DemoImageViewController.swift */; };
 		4B9861A9248F79DF000E44A5 /* DemoStackScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9861A8248F79DF000E44A5 /* DemoStackScrollViewController.swift */; };
 		4BF2A95B228A812100CB3870 /* TextureBridging.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BF2A959228A812100CB3870 /* TextureBridging.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		540E3A1FD657EA36432DB0F9 /* Pods_TextureBridging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5114A756114C2BACD7844ED0 /* Pods_TextureBridging.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		4B5E352A228BF50C00E6B966 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4BF2A94D228A812100CB3870 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4BF2A955228A812100CB3870;
-			remoteInfo = TextureBridging;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		4B5E352E228BF51000E6B966 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				4B5E352D228BF51000E6B966 /* TextureBridging.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		148186B9622B02C43EAE77F2 /* Pods-TextureBridgingDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextureBridgingDemo.debug.xcconfig"; path = "Target Support Files/Pods-TextureBridgingDemo/Pods-TextureBridgingDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		220084C0BE766279A9EFB143 /* Pods-TextureBridging.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextureBridging.release.xcconfig"; path = "Target Support Files/Pods-TextureBridging/Pods-TextureBridging.release.xcconfig"; sourceTree = "<group>"; };
+		29239E1F0004DF4E91BA5148 /* Pods-TextureBridging.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextureBridging.release.xcconfig"; path = "Target Support Files/Pods-TextureBridging/Pods-TextureBridging.release.xcconfig"; sourceTree = "<group>"; };
+		3C5A079DEBB5ED5F4EF4A195 /* Pods_TextureBridgingDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TextureBridgingDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CC890A4E4B60F3B94EA1405 /* Pods-TextureBridgingDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextureBridgingDemo.debug.xcconfig"; path = "Target Support Files/Pods-TextureBridgingDemo/Pods-TextureBridgingDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		4B5E3512228BEF4700E6B966 /* NodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeView.swift; sourceTree = "<group>"; };
 		4B5E3518228BF3A000E6B966 /* TextureBridgingDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextureBridgingDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B5E351A228BF3A000E6B966 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4B5E351C228BF3A000E6B966 /* BridgeToAutoLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeToAutoLayoutViewController.swift; sourceTree = "<group>"; };
-		4B5E351F228BF3A000E6B966 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4B5E3521228BF3A000E6B966 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B5E3524228BF3A100E6B966 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B5E3526228BF3A100E6B966 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B5E352F228BF56A00E6B966 /* Lorem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lorem.swift; sourceTree = "<group>"; };
 		4B5E3531228BF64500E6B966 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		4B6442A02706002B00825887 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		4B6442A22706004300825887 /* RootContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootContainerViewController.swift; sourceTree = "<group>"; };
+		4B6442A72706019700825887 /* DemoUnconstrainedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoUnconstrainedViewController.swift; sourceTree = "<group>"; };
 		4B8AC2E3231CDFF1009AD236 /* DemoImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoImageViewController.swift; sourceTree = "<group>"; };
 		4B9861A8248F79DF000E44A5 /* DemoStackScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoStackScrollViewController.swift; sourceTree = "<group>"; };
-		4BF239549C52EA9825FC5E8D /* Pods-TextureBridging.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextureBridging.debug.xcconfig"; path = "Target Support Files/Pods-TextureBridging/Pods-TextureBridging.debug.xcconfig"; sourceTree = "<group>"; };
 		4BF2A956228A812100CB3870 /* TextureBridging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TextureBridging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BF2A959228A812100CB3870 /* TextureBridging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextureBridging.h; sourceTree = "<group>"; };
 		4BF2A95A228A812100CB3870 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5058C3E052FCC5C8E31D0EF5 /* Pods-TextureBridgingDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextureBridgingDemo.release.xcconfig"; path = "Target Support Files/Pods-TextureBridgingDemo/Pods-TextureBridgingDemo.release.xcconfig"; sourceTree = "<group>"; };
-		5114A756114C2BACD7844ED0 /* Pods_TextureBridging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TextureBridging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		78FEEF77EEF5235C1F0D5495 /* Pods-TextureBridging-TextureBridgingDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextureBridging-TextureBridgingDemo.debug.xcconfig"; path = "Target Support Files/Pods-TextureBridging-TextureBridgingDemo/Pods-TextureBridging-TextureBridgingDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		7FE8AB8291F154B337451893 /* Pods_TextureBridging_TextureBridgingDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TextureBridging_TextureBridgingDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D14E0EA5AE7325CB340C85E2 /* Pods-TextureBridging-TextureBridgingDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextureBridging-TextureBridgingDemo.release.xcconfig"; path = "Target Support Files/Pods-TextureBridging-TextureBridgingDemo/Pods-TextureBridging-TextureBridgingDemo.release.xcconfig"; sourceTree = "<group>"; };
+		6E15791CAD0D1B41296D3892 /* Pods-TextureBridging.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextureBridging.debug.xcconfig"; path = "Target Support Files/Pods-TextureBridging/Pods-TextureBridging.debug.xcconfig"; sourceTree = "<group>"; };
+		80D95E2AECE3913F25EEB515 /* Pods-TextureBridgingDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextureBridgingDemo.release.xcconfig"; path = "Target Support Files/Pods-TextureBridgingDemo/Pods-TextureBridgingDemo.release.xcconfig"; sourceTree = "<group>"; };
+		EDFCCE18870DC45A52683793 /* Pods_TextureBridging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TextureBridging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,8 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B5E352C228BF51000E6B966 /* TextureBridging.framework in Frameworks */,
-				305C0A5D7FCBEFF2BE883ADA /* Pods_TextureBridging_TextureBridgingDemo.framework in Frameworks */,
+				0F47706F40018E154CD434A7 /* Pods_TextureBridgingDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,25 +63,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				540E3A1FD657EA36432DB0F9 /* Pods_TextureBridging.framework in Frameworks */,
+				309BA19E1CE98D0F9B248E1D /* Pods_TextureBridging.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		199E84E2640AAECA8E7F9F80 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EDFCCE18870DC45A52683793 /* Pods_TextureBridging.framework */,
+				3C5A079DEBB5ED5F4EF4A195 /* Pods_TextureBridgingDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4B5E3519228BF3A000E6B966 /* TextureBridgingDemo */ = {
 			isa = PBXGroup;
 			children = (
 				4B5E351A228BF3A000E6B966 /* AppDelegate.swift */,
 				4B5E351C228BF3A000E6B966 /* BridgeToAutoLayoutViewController.swift */,
+				4B6442A72706019700825887 /* DemoUnconstrainedViewController.swift */,
 				4B8AC2E3231CDFF1009AD236 /* DemoImageViewController.swift */,
 				4B9861A8248F79DF000E44A5 /* DemoStackScrollViewController.swift */,
 				4B5E352F228BF56A00E6B966 /* Lorem.swift */,
-				4B5E351E228BF3A000E6B966 /* Main.storyboard */,
 				4B5E3521228BF3A000E6B966 /* Assets.xcassets */,
 				4B5E3523228BF3A100E6B966 /* LaunchScreen.storyboard */,
 				4B5E3526228BF3A100E6B966 /* Info.plist */,
+				4B6442A02706002B00825887 /* Book.swift */,
+				4B6442A22706004300825887 /* RootContainerViewController.swift */,
 			);
 			path = TextureBridgingDemo;
 			sourceTree = "<group>";
@@ -118,7 +104,7 @@
 				4B5E3519228BF3A000E6B966 /* TextureBridgingDemo */,
 				4BF2A957228A812100CB3870 /* Products */,
 				AADBBC95B60DE0EBFCB9ACC3 /* Pods */,
-				84CE255473394FD72E0E6274 /* Frameworks */,
+				199E84E2640AAECA8E7F9F80 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -142,24 +128,13 @@
 			path = TextureBridging;
 			sourceTree = "<group>";
 		};
-		84CE255473394FD72E0E6274 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				5114A756114C2BACD7844ED0 /* Pods_TextureBridging.framework */,
-				7FE8AB8291F154B337451893 /* Pods_TextureBridging_TextureBridgingDemo.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		AADBBC95B60DE0EBFCB9ACC3 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				4BF239549C52EA9825FC5E8D /* Pods-TextureBridging.debug.xcconfig */,
-				220084C0BE766279A9EFB143 /* Pods-TextureBridging.release.xcconfig */,
-				148186B9622B02C43EAE77F2 /* Pods-TextureBridgingDemo.debug.xcconfig */,
-				5058C3E052FCC5C8E31D0EF5 /* Pods-TextureBridgingDemo.release.xcconfig */,
-				78FEEF77EEF5235C1F0D5495 /* Pods-TextureBridging-TextureBridgingDemo.debug.xcconfig */,
-				D14E0EA5AE7325CB340C85E2 /* Pods-TextureBridging-TextureBridgingDemo.release.xcconfig */,
+				6E15791CAD0D1B41296D3892 /* Pods-TextureBridging.debug.xcconfig */,
+				29239E1F0004DF4E91BA5148 /* Pods-TextureBridging.release.xcconfig */,
+				3CC890A4E4B60F3B94EA1405 /* Pods-TextureBridgingDemo.debug.xcconfig */,
+				80D95E2AECE3913F25EEB515 /* Pods-TextureBridgingDemo.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -182,17 +157,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4B5E3529228BF3A100E6B966 /* Build configuration list for PBXNativeTarget "TextureBridgingDemo" */;
 			buildPhases = (
-				15C1C7893A0F33757BC8517A /* [CP] Check Pods Manifest.lock */,
+				6C397D895A362BE9FF77AC9D /* [CP] Check Pods Manifest.lock */,
 				4B5E3514228BF3A000E6B966 /* Sources */,
 				4B5E3515228BF3A000E6B966 /* Frameworks */,
 				4B5E3516228BF3A000E6B966 /* Resources */,
-				DBFCD8C27A3475422D76E183 /* [CP] Embed Pods Frameworks */,
-				4B5E352E228BF51000E6B966 /* Embed Frameworks */,
+				2D148A31B3223F4DC44EA5B4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				4B5E352B228BF50C00E6B966 /* PBXTargetDependency */,
 			);
 			name = TextureBridgingDemo;
 			productName = TextureBridgingDemo;
@@ -203,7 +176,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4BF2A95E228A812100CB3870 /* Build configuration list for PBXNativeTarget "TextureBridging" */;
 			buildPhases = (
-				23DDD9708E100F41044391C2 /* [CP] Check Pods Manifest.lock */,
+				48B2D7E19729DFE5E8F576F6 /* [CP] Check Pods Manifest.lock */,
 				4BF2A951228A812100CB3870 /* Headers */,
 				4BF2A952228A812100CB3870 /* Sources */,
 				4BF2A953228A812100CB3870 /* Frameworks */,
@@ -263,7 +236,6 @@
 			files = (
 				4B5E3525228BF3A100E6B966 /* LaunchScreen.storyboard in Resources */,
 				4B5E3522228BF3A100E6B966 /* Assets.xcassets in Resources */,
-				4B5E3520228BF3A000E6B966 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,29 +249,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		15C1C7893A0F33757BC8517A /* [CP] Check Pods Manifest.lock */ = {
+		2D148A31B3223F4DC44EA5B4 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TextureBridgingDemo/Pods-TextureBridgingDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TextureBridging-TextureBridgingDemo-checkManifestLockResult.txt",
+				"${PODS_ROOT}/Target Support Files/Pods-TextureBridgingDemo/Pods-TextureBridgingDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TextureBridgingDemo/Pods-TextureBridgingDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		23DDD9708E100F41044391C2 /* [CP] Check Pods Manifest.lock */ = {
+		48B2D7E19729DFE5E8F576F6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -321,21 +288,26 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DBFCD8C27A3475422D76E183 /* [CP] Embed Pods Frameworks */ = {
+		6C397D895A362BE9FF77AC9D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TextureBridging-TextureBridgingDemo/Pods-TextureBridging-TextureBridgingDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TextureBridging-TextureBridgingDemo/Pods-TextureBridging-TextureBridgingDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TextureBridgingDemo-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TextureBridging-TextureBridgingDemo/Pods-TextureBridging-TextureBridgingDemo-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -346,7 +318,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B9861A9248F79DF000E44A5 /* DemoStackScrollViewController.swift in Sources */,
+				4B6442A82706019700825887 /* DemoUnconstrainedViewController.swift in Sources */,
 				4B5E351D228BF3A000E6B966 /* BridgeToAutoLayoutViewController.swift in Sources */,
+				4B6442A32706004300825887 /* RootContainerViewController.swift in Sources */,
+				4B6442A12706002B00825887 /* Book.swift in Sources */,
 				4B5E3530228BF56A00E6B966 /* Lorem.swift in Sources */,
 				4B5E351B228BF3A000E6B966 /* AppDelegate.swift in Sources */,
 				4B8AC2E4231CDFF1009AD236 /* DemoImageViewController.swift in Sources */,
@@ -364,23 +339,7 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		4B5E352B228BF50C00E6B966 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4BF2A955228A812100CB3870 /* TextureBridging */;
-			targetProxy = 4B5E352A228BF50C00E6B966 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
-		4B5E351E228BF3A000E6B966 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4B5E351F228BF3A000E6B966 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4B5E3523228BF3A100E6B966 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -394,13 +353,12 @@
 /* Begin XCBuildConfiguration section */
 		4B5E3527228BF3A100E6B966 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 78FEEF77EEF5235C1F0D5495 /* Pods-TextureBridging-TextureBridgingDemo.debug.xcconfig */;
+			baseConfigurationReference = 3CC890A4E4B60F3B94EA1405 /* Pods-TextureBridgingDemo.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TextureBridgingDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -414,13 +372,12 @@
 		};
 		4B5E3528228BF3A100E6B966 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D14E0EA5AE7325CB340C85E2 /* Pods-TextureBridging-TextureBridgingDemo.release.xcconfig */;
+			baseConfigurationReference = 80D95E2AECE3913F25EEB515 /* Pods-TextureBridgingDemo.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TextureBridgingDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -556,7 +513,7 @@
 		};
 		4BF2A95F228A812100CB3870 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4BF239549C52EA9825FC5E8D /* Pods-TextureBridging.debug.xcconfig */;
+			baseConfigurationReference = 6E15791CAD0D1B41296D3892 /* Pods-TextureBridging.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -588,7 +545,7 @@
 		};
 		4BF2A960228A812100CB3870 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 220084C0BE766279A9EFB143 /* Pods-TextureBridging.release.xcconfig */;
+			baseConfigurationReference = 29239E1F0004DF4E91BA5148 /* Pods-TextureBridging.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
