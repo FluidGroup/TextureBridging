@@ -73,6 +73,16 @@ open class NodeView<D: ASDisplayNode>: UIView {
     super.invalidateIntrinsicContentSize()
   }
 
+  open override func setContentHuggingPriority(_ priority: UILayoutPriority, for axis: NSLayoutConstraint.Axis) {
+    super.setContentHuggingPriority(priority, for: axis)
+    internalView.setContentHuggingPriority(priority, for: axis)
+  }
+
+  open override func setContentCompressionResistancePriority(_ priority: UILayoutPriority, for axis: NSLayoutConstraint.Axis) {
+    super.setContentCompressionResistancePriority(priority, for: axis)
+    internalView.setContentCompressionResistancePriority(priority, for: axis)
+  }
+
 }
 
 private final class _InternalNodeView<D: ASDisplayNode>: UILabel /* To use `textRect` method */ {
