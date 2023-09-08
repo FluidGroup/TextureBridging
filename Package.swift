@@ -4,7 +4,7 @@ import PackageDescription
 let package = Package(
   name: "TextureBridging",
   platforms: [
-    .iOS(.v11),
+    .iOS(.v13),
   ],
   products: [
     .library(name: "TextureBridging", targets: ["TextureBridging"]),
@@ -17,8 +17,7 @@ let package = Package(
       name: "TextureBridging",
       dependencies: [
         .product(name: "AsyncDisplayKit", package: "Texture"),
-      ],
-      path: "TextureBridging"
+      ]
     ),
   ],
   swiftLanguageVersions: [.v5]
