@@ -8,9 +8,9 @@
 
 import UIKit
 
+import MondrianLayout
 import AsyncDisplayKit
 import TextureBridging
-import EasyPeasy
 
 final class DemoImageViewController: UIViewController {
   
@@ -25,10 +25,14 @@ final class DemoImageViewController: UIViewController {
     
     view.addSubview(imageView)
     view.addSubview(button)
-    
-    imageView.easy.layout(Center())
-    
-    button.easy.layout([CenterX(), Bottom(40)])
+
+    Mondrian.buildSubviews(on: view) {
+      VStackBlock {
+        imageView
+        button
+      }
+      .container(respectingSafeAreaEdges: .all)
+    }
     
     button.addTarget(self, action: #selector(tap), for: .touchUpInside)
   }

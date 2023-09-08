@@ -1,0 +1,476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4B305D6D2AAB8B120067A836 /* TextureBridging in Frameworks */ = {isa = PBXBuildFile; productRef = 4B305D6C2AAB8B120067A836 /* TextureBridging */; };
+		4B305D712AAB8BC40067A836 /* TextureSwiftSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 4B305D702AAB8BC40067A836 /* TextureSwiftSupport */; };
+		4B305D742AAB8BD70067A836 /* MondrianLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 4B305D732AAB8BD70067A836 /* MondrianLayout */; };
+		4B305D762AAB8BD70067A836 /* MondrianLayoutDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 4B305D752AAB8BD70067A836 /* MondrianLayoutDynamic */; };
+		4B305D792AAB8BE90067A836 /* TypedTextAttributes in Frameworks */ = {isa = PBXBuildFile; productRef = 4B305D782AAB8BE90067A836 /* TypedTextAttributes */; };
+		4B305D7C2AAB8BFB0067A836 /* StackScrollView in Frameworks */ = {isa = PBXBuildFile; productRef = 4B305D7B2AAB8BFB0067A836 /* StackScrollView */; };
+		4B5E351B228BF3A000E6B966 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5E351A228BF3A000E6B966 /* AppDelegate.swift */; };
+		4B5E351D228BF3A000E6B966 /* BridgeToAutoLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5E351C228BF3A000E6B966 /* BridgeToAutoLayoutViewController.swift */; };
+		4B5E3520228BF3A000E6B966 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B5E351E228BF3A000E6B966 /* Main.storyboard */; };
+		4B5E3522228BF3A100E6B966 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B5E3521228BF3A000E6B966 /* Assets.xcassets */; };
+		4B5E3525228BF3A100E6B966 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B5E3523228BF3A100E6B966 /* LaunchScreen.storyboard */; };
+		4B5E3530228BF56A00E6B966 /* Lorem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5E352F228BF56A00E6B966 /* Lorem.swift */; };
+		4B8AC2E4231CDFF1009AD236 /* DemoImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8AC2E3231CDFF1009AD236 /* DemoImageViewController.swift */; };
+		4B9861A9248F79DF000E44A5 /* DemoStackScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9861A8248F79DF000E44A5 /* DemoStackScrollViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4B5E352E228BF51000E6B966 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4B305D6A2AAB8AF50067A836 /* TextureBridging */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = TextureBridging; path = ..; sourceTree = "<group>"; };
+		4B5E3518228BF3A000E6B966 /* TextureBridgingDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextureBridgingDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B5E351A228BF3A000E6B966 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4B5E351C228BF3A000E6B966 /* BridgeToAutoLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeToAutoLayoutViewController.swift; sourceTree = "<group>"; };
+		4B5E351F228BF3A000E6B966 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4B5E3521228BF3A000E6B966 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4B5E3524228BF3A100E6B966 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4B5E3526228BF3A100E6B966 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B5E352F228BF56A00E6B966 /* Lorem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lorem.swift; sourceTree = "<group>"; };
+		4B8AC2E3231CDFF1009AD236 /* DemoImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoImageViewController.swift; sourceTree = "<group>"; };
+		4B9861A8248F79DF000E44A5 /* DemoStackScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoStackScrollViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4B5E3515228BF3A000E6B966 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B305D762AAB8BD70067A836 /* MondrianLayoutDynamic in Frameworks */,
+				4B305D742AAB8BD70067A836 /* MondrianLayout in Frameworks */,
+				4B305D792AAB8BE90067A836 /* TypedTextAttributes in Frameworks */,
+				4B305D712AAB8BC40067A836 /* TextureSwiftSupport in Frameworks */,
+				4B305D6D2AAB8B120067A836 /* TextureBridging in Frameworks */,
+				4B305D7C2AAB8BFB0067A836 /* StackScrollView in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4B305D6B2AAB8B120067A836 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4B5E3519228BF3A000E6B966 /* TextureBridgingDemo */ = {
+			isa = PBXGroup;
+			children = (
+				4B5E351A228BF3A000E6B966 /* AppDelegate.swift */,
+				4B5E351C228BF3A000E6B966 /* BridgeToAutoLayoutViewController.swift */,
+				4B8AC2E3231CDFF1009AD236 /* DemoImageViewController.swift */,
+				4B9861A8248F79DF000E44A5 /* DemoStackScrollViewController.swift */,
+				4B5E352F228BF56A00E6B966 /* Lorem.swift */,
+				4B5E351E228BF3A000E6B966 /* Main.storyboard */,
+				4B5E3521228BF3A000E6B966 /* Assets.xcassets */,
+				4B5E3523228BF3A100E6B966 /* LaunchScreen.storyboard */,
+				4B5E3526228BF3A100E6B966 /* Info.plist */,
+			);
+			path = TextureBridgingDemo;
+			sourceTree = "<group>";
+		};
+		4BF2A94C228A812100CB3870 = {
+			isa = PBXGroup;
+			children = (
+				4B305D6A2AAB8AF50067A836 /* TextureBridging */,
+				4B5E3519228BF3A000E6B966 /* TextureBridgingDemo */,
+				4BF2A957228A812100CB3870 /* Products */,
+				4B305D6B2AAB8B120067A836 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4BF2A957228A812100CB3870 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4B5E3518228BF3A000E6B966 /* TextureBridgingDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4B5E3517228BF3A000E6B966 /* TextureBridgingDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B5E3529228BF3A100E6B966 /* Build configuration list for PBXNativeTarget "TextureBridgingDemo" */;
+			buildPhases = (
+				4B5E3514228BF3A000E6B966 /* Sources */,
+				4B5E3515228BF3A000E6B966 /* Frameworks */,
+				4B5E3516228BF3A000E6B966 /* Resources */,
+				4B5E352E228BF51000E6B966 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TextureBridgingDemo;
+			packageProductDependencies = (
+				4B305D6C2AAB8B120067A836 /* TextureBridging */,
+				4B305D702AAB8BC40067A836 /* TextureSwiftSupport */,
+				4B305D732AAB8BD70067A836 /* MondrianLayout */,
+				4B305D752AAB8BD70067A836 /* MondrianLayoutDynamic */,
+				4B305D782AAB8BE90067A836 /* TypedTextAttributes */,
+				4B305D7B2AAB8BFB0067A836 /* StackScrollView */,
+			);
+			productName = TextureBridgingDemo;
+			productReference = 4B5E3518228BF3A000E6B966 /* TextureBridgingDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4BF2A94D228A812100CB3870 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = muukii;
+				TargetAttributes = {
+					4B5E3517228BF3A000E6B966 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+				};
+			};
+			buildConfigurationList = 4BF2A950228A812100CB3870 /* Build configuration list for PBXProject "TextureBridging" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4BF2A94C228A812100CB3870;
+			packageReferences = (
+				4B305D6F2AAB8BC40067A836 /* XCRemoteSwiftPackageReference "TextureSwiftSupport" */,
+				4B305D722AAB8BD70067A836 /* XCRemoteSwiftPackageReference "MondrianLayout" */,
+				4B305D772AAB8BE90067A836 /* XCRemoteSwiftPackageReference "TypedTextAttributes" */,
+				4B305D7A2AAB8BFB0067A836 /* XCRemoteSwiftPackageReference "StackScrollView" */,
+			);
+			productRefGroup = 4BF2A957228A812100CB3870 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4B5E3517228BF3A000E6B966 /* TextureBridgingDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4B5E3516228BF3A000E6B966 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B5E3525228BF3A100E6B966 /* LaunchScreen.storyboard in Resources */,
+				4B5E3522228BF3A100E6B966 /* Assets.xcassets in Resources */,
+				4B5E3520228BF3A000E6B966 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4B5E3514228BF3A000E6B966 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B9861A9248F79DF000E44A5 /* DemoStackScrollViewController.swift in Sources */,
+				4B5E351D228BF3A000E6B966 /* BridgeToAutoLayoutViewController.swift in Sources */,
+				4B5E3530228BF56A00E6B966 /* Lorem.swift in Sources */,
+				4B5E351B228BF3A000E6B966 /* AppDelegate.swift in Sources */,
+				4B8AC2E4231CDFF1009AD236 /* DemoImageViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4B5E351E228BF3A000E6B966 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B5E351F228BF3A000E6B966 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4B5E3523228BF3A100E6B966 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B5E3524228BF3A100E6B966 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4B5E3527228BF3A100E6B966 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TextureBridgingDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.muukii.TextureBridgingDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4B5E3528228BF3A100E6B966 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TextureBridgingDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.muukii.TextureBridgingDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4BF2A95C228A812100CB3870 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4BF2A95D228A812100CB3870 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4B5E3529228BF3A100E6B966 /* Build configuration list for PBXNativeTarget "TextureBridgingDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B5E3527228BF3A100E6B966 /* Debug */,
+				4B5E3528228BF3A100E6B966 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BF2A950228A812100CB3870 /* Build configuration list for PBXProject "TextureBridging" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BF2A95C228A812100CB3870 /* Debug */,
+				4BF2A95D228A812100CB3870 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4B305D6F2AAB8BC40067A836 /* XCRemoteSwiftPackageReference "TextureSwiftSupport" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/FluidGroup/TextureSwiftSupport";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.20.1;
+			};
+		};
+		4B305D722AAB8BD70067A836 /* XCRemoteSwiftPackageReference "MondrianLayout" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/FluidGroup/MondrianLayout.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.10.0;
+			};
+		};
+		4B305D772AAB8BE90067A836 /* XCRemoteSwiftPackageReference "TypedTextAttributes" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/muukii/TypedTextAttributes.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.0;
+			};
+		};
+		4B305D7A2AAB8BFB0067A836 /* XCRemoteSwiftPackageReference "StackScrollView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/FluidGroup/StackScrollView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.6.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4B305D6C2AAB8B120067A836 /* TextureBridging */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TextureBridging;
+		};
+		4B305D702AAB8BC40067A836 /* TextureSwiftSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4B305D6F2AAB8BC40067A836 /* XCRemoteSwiftPackageReference "TextureSwiftSupport" */;
+			productName = TextureSwiftSupport;
+		};
+		4B305D732AAB8BD70067A836 /* MondrianLayout */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4B305D722AAB8BD70067A836 /* XCRemoteSwiftPackageReference "MondrianLayout" */;
+			productName = MondrianLayout;
+		};
+		4B305D752AAB8BD70067A836 /* MondrianLayoutDynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4B305D722AAB8BD70067A836 /* XCRemoteSwiftPackageReference "MondrianLayout" */;
+			productName = MondrianLayoutDynamic;
+		};
+		4B305D782AAB8BE90067A836 /* TypedTextAttributes */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4B305D772AAB8BE90067A836 /* XCRemoteSwiftPackageReference "TypedTextAttributes" */;
+			productName = TypedTextAttributes;
+		};
+		4B305D7B2AAB8BFB0067A836 /* StackScrollView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4B305D7A2AAB8BFB0067A836 /* XCRemoteSwiftPackageReference "StackScrollView" */;
+			productName = StackScrollView;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 4BF2A94D228A812100CB3870 /* Project object */;
+}

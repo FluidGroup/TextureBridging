@@ -4,21 +4,20 @@ import PackageDescription
 let package = Package(
   name: "TextureBridging",
   platforms: [
-    .iOS(.v11),
+    .iOS(.v13),
   ],
   products: [
     .library(name: "TextureBridging", targets: ["TextureBridging"]),
   ],
   dependencies: [
-    .package(url: "https://github.com/FluidGroup/Texture.git", branch: "spm"),
+    .package(url: "https://github.com/FluidGroup/Texture.git", from: "3.0.2"),
   ],
   targets: [
     .target(
-      name: "TextureBridging", 
+      name: "TextureBridging",
       dependencies: [
         .product(name: "AsyncDisplayKit", package: "Texture"),
-      ],
-      path: "TextureBridging"
+      ]
     ),
   ],
   swiftLanguageVersions: [.v5]

@@ -1,0 +1,59 @@
+{
+  "pins" : [
+    {
+      "identity" : "descriptors",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/FluidGroup/Descriptors",
+      "state" : {
+        "revision" : "f41ce2605a76c5d378fe8c5e8c5c98b544dfd108",
+        "version" : "0.2.3"
+      }
+    },
+    {
+      "identity" : "mondrianlayout",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/FluidGroup/MondrianLayout.git",
+      "state" : {
+        "revision" : "5f00b13984fe08316fc5b5be06e2f41c14a3befa",
+        "version" : "0.10.0"
+      }
+    },
+    {
+      "identity" : "stackscrollview",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/FluidGroup/StackScrollView",
+      "state" : {
+        "revision" : "c7d2950cdaee7f4aa0dfd1a1364d352f841c9954",
+        "version" : "1.6.3"
+      }
+    },
+    {
+      "identity" : "texture",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/FluidGroup/Texture.git",
+      "state" : {
+        "revision" : "68df47f0d26522da76b06f22e9a97e4d4ab58dad",
+        "version" : "3.0.2"
+      }
+    },
+    {
+      "identity" : "textureswiftsupport",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/FluidGroup/TextureSwiftSupport",
+      "state" : {
+        "revision" : "fb748d6a9d0a2dca0635227e1db0360fd26e0e24",
+        "version" : "3.20.1"
+      }
+    },
+    {
+      "identity" : "typedtextattributes",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/muukii/TypedTextAttributes.git",
+      "state" : {
+        "revision" : "22aadd76b1cfe7a0702200990c9c5b8f4d33a912",
+        "version" : "1.5.0"
+      }
+    }
+  ],
+  "version" : 2
+}

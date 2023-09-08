@@ -8,7 +8,7 @@
 
 import UIKit
 
-import EasyPeasy
+import MondrianLayout
 import TextureBridging
 import AsyncDisplayKit
 import TypedTextAttributes
@@ -26,19 +26,14 @@ final class BridgeToAutoLayoutViewController : UIViewController {
     view.backgroundColor = .white
     view.addSubview(changeTextButton)
     view.addSubview(nodeView)
-    
-    changeTextButton.easy.layout([
-      CenterX(),
-      Bottom(32).to(view.safeAreaLayoutGuide, .bottom)
-      ])
-    
-    nodeView.easy.layout([
-      Top(32).to(view.safeAreaLayoutGuide, .top),
-      CenterX(),
-      Left(>=32),
-      Right(<=32),
-      Bottom(<=0).to(changeTextButton, .top),
-      ])
+
+    Mondrian.buildSubviews(on: view) {
+      VStackBlock {
+        nodeView
+        changeTextButton
+      }
+      .container(respectingSafeAreaEdges: .all)
+    }
     
     changeTextButton.addTarget(self, action: #selector(didTap), for: .touchUpInside)
   }
