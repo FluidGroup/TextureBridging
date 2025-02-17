@@ -10,7 +10,6 @@
 		4B305D6D2AAB8B120067A836 /* TextureBridging in Frameworks */ = {isa = PBXBuildFile; productRef = 4B305D6C2AAB8B120067A836 /* TextureBridging */; };
 		4B305D712AAB8BC40067A836 /* TextureSwiftSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 4B305D702AAB8BC40067A836 /* TextureSwiftSupport */; };
 		4B305D742AAB8BD70067A836 /* MondrianLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 4B305D732AAB8BD70067A836 /* MondrianLayout */; };
-		4B305D762AAB8BD70067A836 /* MondrianLayoutDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 4B305D752AAB8BD70067A836 /* MondrianLayoutDynamic */; };
 		4B305D792AAB8BE90067A836 /* TypedTextAttributes in Frameworks */ = {isa = PBXBuildFile; productRef = 4B305D782AAB8BE90067A836 /* TypedTextAttributes */; };
 		4B305D7C2AAB8BFB0067A836 /* StackScrollView in Frameworks */ = {isa = PBXBuildFile; productRef = 4B305D7B2AAB8BFB0067A836 /* StackScrollView */; };
 		4B5E351B228BF3A000E6B966 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5E351A228BF3A000E6B966 /* AppDelegate.swift */; };
@@ -55,7 +54,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B305D762AAB8BD70067A836 /* MondrianLayoutDynamic in Frameworks */,
 				4B305D742AAB8BD70067A836 /* MondrianLayout in Frameworks */,
 				4B305D792AAB8BE90067A836 /* TypedTextAttributes in Frameworks */,
 				4B305D712AAB8BC40067A836 /* TextureSwiftSupport in Frameworks */,

@@ -43,11 +43,27 @@ extension DemoStackScrollViewController {
 
       automaticallyManagesSubnodes = true
 
-      backgroundColor = .orange
+      backgroundColor = .orange.withAlphaComponent(0.5)
 
-      textNode.attributedText = NSAttributedString(string: """
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-""")
+      textNode.attributedText = NSAttributedString(
+        string: """
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        """,
+        attributes: [
+          .foregroundColor: UIColor.init {
+            switch $0.userInterfaceStyle {
+            case .light:
+              return .black
+            case .dark:
+              return .white
+            case .unspecified:
+              return .black
+            @unknown default:
+              return .black
+            }
+          }
+        ]
+      )
     }
 
     override func layoutSpecThatFits(_ constrainedSize: ASSizeRange) -> ASLayoutSpec {
@@ -66,7 +82,23 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 
       let nodes = (0..<30).map { i -> ASTextNode in
         let text = ASTextNode()
-        text.attributedText = NSAttributedString(string: "Hello")
+        text.attributedText = NSAttributedString(
+          string: "Hello",
+          attributes: [
+            .foregroundColor: UIColor.init {
+              switch $0.userInterfaceStyle {
+              case .light:
+                return .systemBlue
+              case .dark:
+                return .systemGreen
+              case .unspecified:
+                return .systemBlue
+              @unknown default:
+                return .systemBlue
+              }
+            }
+          ]
+        )
         return text
       }
 
@@ -74,7 +106,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 
       super.init()
 
-      backgroundColor = .red
+      backgroundColor = .red.withAlphaComponent(0.5)
 
       automaticallyManagesSubnodes = true
 
