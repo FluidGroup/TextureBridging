@@ -211,6 +211,10 @@ private final class _InternalNodeView<D: ASDisplayNode>: UILabel /* To use `text
       self?.invalidateIntrinsicContentSize()
     }
 
+    ASTraitCollectionPropagateDown(
+      wrapper,
+      ASPrimitiveTraitCollectionFromUITraitCollection(traitCollection)
+    )
   }
 
   @available(*, unavailable)
@@ -252,8 +256,26 @@ private final class _InternalNodeView<D: ASDisplayNode>: UILabel /* To use `text
   override func layoutSubviews() {
 
     super.layoutSubviews()
-
     wrapper.frame = bounds
+    propagateTraitCollectionIfNeeded()
+  }
+
+  public override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+    super.traitCollectionDidChange(previousTraitCollection)
+    propagateTraitCollectionIfNeeded()
+  }
+
+  private func propagateTraitCollectionIfNeeded() {
+    if wrapper.closestViewController is ASDKViewController {
+      // ASDKViewController will handle trait collection changes
+      return
+    }
+    let traitCollection = ASPrimitiveTraitCollectionFromUITraitCollection(traitCollection)
+    let oldTraitCollection = wrapper.primitiveTraitCollection()
+    guard traitCollection.userInterfaceStyle != oldTraitCollection.userInterfaceStyle else {
+      return
+    }
+    ASTraitCollectionPropagateDown(wrapper, traitCollection)
   }
 }
 
